@@ -36,14 +36,14 @@ pm_caption += (
 )
 pm_caption += "**I Will Be With You Until My Dynos Dead"
 pm_caption += "✘ About My System ✘\n\n"
-pm_caption += "➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n"
-pm_caption += "➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/BLACUSERBOT)\n"
-pm_caption += "➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [ B乛LAC Uʂҽɾზσƚ](https://github.com/KeinShin)\n"
-pm_caption += "➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [ B乛LAC Uʂҽɾზσƚ](https://github.com/KeinShin/Black-Lightning)\n\n"
+pm_caption += "➾ **`ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ`** ☞ 1.17.5\n"
+pm_caption += "➾ **`ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ`** ☞ [ᴊᴏɪɴ](https://t.me/BLACUSERBOT)\n"
+pm_caption += "➾ **`ʟɪᴄᴇɴꜱᴇ`**  ☞ [ B乛LAC Uʂҽɾზσƚ](https://github.com/KeinShin)\n"
+pm_caption += "➾ **`ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ`** ☞ [ B乛LAC Uʂҽɾზσƚ](https://github.com/KeinShin/Black-Lightning)\n\n"
 pm_caption += (
     "➾ **Hey Whoever Is Seein This Alive Dont Dm  And Dont Spam In My  Master DM"
 )
-pm_caption += "➾ **Spammer Go Away Im His Assitant"
+pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein"
 pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
 
