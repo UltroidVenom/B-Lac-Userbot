@@ -32,7 +32,7 @@ from userbot.plugins.sql_helper.idadder_sql import (
 )
 
 
-@borg.on(events.NewMessage(pattern="^/start"))
+@tgbot.on(events.NewMessage(pattern="^/start"))
 async def start(event):
     starkbot = await tgbot.get_me()
     bot_id = starkbot.first_name
@@ -74,7 +74,7 @@ async def start(event):
 # Data's
 
 
-@borg.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
 async def help(event):
     await event.delete()
     if event.query.user_id is not bot.uid:
@@ -93,7 +93,7 @@ async def help(event):
         )
 
 
-@borg.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
 async def users(event):
     if event.query.user_id == bot.uid:
         await event.delete()
@@ -114,7 +114,7 @@ async def users(event):
         pass
 
 
-@borg.on(events.callbackquery.CallbackQuery(data=re.compile(b"gibcmd")))
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"gibcmd")))
 async def users(event):
     await event.delete()
     grabon = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot \n➤ /purge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \n➤ /del - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
@@ -122,7 +122,7 @@ async def users(event):
 
 
 # Bot Permit.
-@borg.on(events.NewMessage(func=lambda e: e.is_private))
+@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
 async def all_messages_catcher(event):
     if is_he_added(event.sender_id):
         return
@@ -139,7 +139,7 @@ async def all_messages_catcher(event):
         add_me_in_db(sed.id, event.sender_id, event.id)
 
 
-@borg.on(events.NewMessage(func=lambda e: e.is_private))
+@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
 async def sed(event):
     msg = await event.get_reply_message()
     msg.id
@@ -153,7 +153,7 @@ async def sed(event):
 
 
 # broadcast
-@borg.on(
+@tgbot.on(
     events.NewMessage(
         pattern="^/broadcast ?(.*)", func=lambda e: e.sender_id == bot.uid
     )
@@ -179,7 +179,7 @@ async def sedlyfsir(event):
     )
 
 
-@borg.on(
+@tgbot.on(
     events.NewMessage(pattern="^/stats ?(.*)", func=lambda e: e.sender_id == bot.uid)
 )
 async def starkisnoob(event):
@@ -189,13 +189,13 @@ async def starkisnoob(event):
     )
 
 
-@borg.on(events.NewMessage(pattern="^/help", func=lambda e: e.sender_id == bot.uid))
+@tgbot.on(events.NewMessage(pattern="^/help", func=lambda e: e.sender_id == bot.uid))
 async def starkislub(event):
     grabonx = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
     await event.reply(grabonx)
 
 
-@borg.on(
+@tgbot.on(
     events.NewMessage(pattern="^/block ?(.*)", func=lambda e: e.sender_id == bot.uid)
 )
 async def starkisnoob(event):
@@ -214,7 +214,7 @@ async def starkisnoob(event):
         )
 
 
-@borg.on(
+@tgbot.on(
     events.NewMessage(pattern="^/unblock ?(.*)", func=lambda e: e.sender_id == bot.uid)
 )
 async def starkisnoob(event):
