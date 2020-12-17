@@ -5,7 +5,7 @@
 [![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/krish1303y)
 
 
-# †hê B乛LAC Uʂҽɾზσƚ
+# †hê B乛LAC USERBOT
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
 This is the one and only official B Lac Userbot made by [@krish1303y](https://t.me/krish1303y) Also join support channel and group :- https://t.me/BLAC_USERBOT_SUPPORT Enjoy Your Bot!!💝
