@@ -60,7 +60,7 @@ for name in files:
 
 print("B Lac has been deployed! ")
 
-print("Setting up Lightning")
+print("Setting up B Lac")
 path = "userbot/plugins/assistant/*.py"
 files = glob.glob(path)
 for name in files:
