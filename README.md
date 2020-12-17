@@ -26,6 +26,11 @@ This is the one and only official HellBot Userbot made by [@krish1303y](https://
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot)
 
+
+# String Session
+
+[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@PoxsisYT/B-Lac#main.py)
+
 # Credits👀
 ### • [JaaduBot](https://github.com/Amberyt/JaaduBot)
 ## One and only. Others with some misfuntioning brain stay out from this SUPER POWERFULL BOT😏
