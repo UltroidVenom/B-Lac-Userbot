@@ -32,7 +32,7 @@ from userbot.plugins.sql_helper.idadder_sql import (
 )
 
 
-@tgbot.on(events.NewMessage(pattern="^/start"))
+@borg.on(events.NewMessage(pattern="^/start"))
 async def start(event):
     starkbot = await tgbot.get_me()
     bot_id = starkbot.first_name
@@ -40,7 +40,7 @@ async def start(event):
     replied_user = await event.client(GetFullUserRequest(event.sender_id))
     firstname = replied_user.user.first_name
     vent = event.chat_id
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [Black Lightning](https://t.me/lightningsupport)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy [➤ Master](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [B Lac](https://t.me/lightningsupport)"
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -65,8 +65,8 @@ async def start(event):
             message=starttext,
             link_preview=False,
             buttons=[
-                [custom.Button.inline("Deploy your Black Lightning", data="deploy")],
-                [Button.url("Help Me ❓", "https://t.me/lightnigsupport")],
+                [custom.Button.inline("Deploy your B Lac", data="deploy")],
+                [Button.url("Help Me ❓", "https://t.me/BLACUSERBOT")],
             ],
         )
 
@@ -74,13 +74,13 @@ async def start(event):
 # Data's
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
+@borg.on(events.callbackquery.CallbackQuery(data=re.compile(b"deploy")))
 async def help(event):
     await event.delete()
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy Black Lightning In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="You Can Deploy B Lac In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
             buttons=[
                 [
                     Button.url(
@@ -88,12 +88,12 @@ async def help(event):
                         "https://www.youtube.com/watch?v=GfZMqrCAqxI",
                     )
                 ],
-                [Button.url("Need Help ❓", "https://t.me/lightninggroup")],
+                [Button.url("Need Help ❓", "https://t.me/BLACUSERBOT")],
             ],
         )
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
+@borg.on(events.callbackquery.CallbackQuery(data=re.compile(b"users")))
 async def users(event):
     if event.query.user_id == bot.uid:
         await event.delete()
@@ -114,7 +114,7 @@ async def users(event):
         pass
 
 
-@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"gibcmd")))
+@borg.on(events.callbackquery.CallbackQuery(data=re.compile(b"gibcmd")))
 async def users(event):
     await event.delete()
     grabon = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot \n➤ /purge - Reply It From The Message u Want to Delete (Your Bot Should be Admin to Execute It) \n➤ /del - Reply a Message Tht Should Be Deleted (Your Bot Should be Admin to Execute It)"
@@ -122,7 +122,7 @@ async def users(event):
 
 
 # Bot Permit.
-@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
+@borg.on(events.NewMessage(func=lambda e: e.is_private))
 async def all_messages_catcher(event):
     if is_he_added(event.sender_id):
         return
@@ -139,7 +139,7 @@ async def all_messages_catcher(event):
         add_me_in_db(sed.id, event.sender_id, event.id)
 
 
-@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
+@borg.on(events.NewMessage(func=lambda e: e.is_private))
 async def sed(event):
     msg = await event.get_reply_message()
     msg.id
@@ -153,7 +153,7 @@ async def sed(event):
 
 
 # broadcast
-@tgbot.on(
+@borg.on(
     events.NewMessage(
         pattern="^/broadcast ?(.*)", func=lambda e: e.sender_id == bot.uid
     )
@@ -179,7 +179,7 @@ async def sedlyfsir(event):
     )
 
 
-@tgbot.on(
+@borg.on(
     events.NewMessage(pattern="^/stats ?(.*)", func=lambda e: e.sender_id == bot.uid)
 )
 async def starkisnoob(event):
@@ -189,13 +189,13 @@ async def starkisnoob(event):
     )
 
 
-@tgbot.on(events.NewMessage(pattern="^/help", func=lambda e: e.sender_id == bot.uid))
+@borg.on(events.NewMessage(pattern="^/help", func=lambda e: e.sender_id == bot.uid))
 async def starkislub(event):
     grabonx = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
     await event.reply(grabonx)
 
 
-@tgbot.on(
+@borg.on(
     events.NewMessage(pattern="^/block ?(.*)", func=lambda e: e.sender_id == bot.uid)
 )
 async def starkisnoob(event):
@@ -214,7 +214,7 @@ async def starkisnoob(event):
         )
 
 
-@tgbot.on(
+@borg.on(
     events.NewMessage(pattern="^/unblock ?(.*)", func=lambda e: e.sender_id == bot.uid)
 )
 async def starkisnoob(event):

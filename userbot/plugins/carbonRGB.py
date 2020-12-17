@@ -108,7 +108,7 @@ async def carbon_api(e):
         await e.client.send_file(
             e.chat_id,
             file,
-            caption="Carbonised by [Black Lightning(https://github.com/KeinShin/Black-Lightning)",
+            caption="Carbonised by [ɓ乛ℓα૮ µรε૨ɓσƭ](https://github.com/B-Lac/B-Lac-Userbot)",
             force_document=False,
             reply_to=e.message.reply_to_msg_id,
         )

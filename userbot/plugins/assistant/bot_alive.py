@@ -6,7 +6,7 @@ currentversion = "4.9"
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Black Lightning"
-PM_IMG = "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
+PM_IMG = "https://telegra.ph/file/76daded01da7289d0bd4d.jpg"
 pm_caption = "➥ **ASSISTANT IS:** `ONLINE`\n\n"
 pm_caption += "➥ **SYSTEMS STATS**\n"
 pm_caption += "➥ **Telethon Version:** `1.15.0` \n"

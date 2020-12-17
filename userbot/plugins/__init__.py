@@ -57,7 +57,7 @@ else:
     dbstats = "Not Fine ❌"
 
 inlinestats = (
-    f"✘ SHOWING Black Lightning STATS ✘\n"
+    f"✘ Showing ɓ乛ℓα૮ µรε૨ɓσƭ Stats ✘\n"
     f"VERSION = {currentversion} \n"
     f"DATABASE = {dbstats} \n"
     f"SUDO = {amiusingsudo} \n"

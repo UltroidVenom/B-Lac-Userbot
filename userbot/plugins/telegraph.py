@@ -60,7 +60,7 @@ async def _(event):
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
                 await event.edit(
-                    "File uploaded ser By Black Lightning ᴛʜᴇ ʙᴇsᴛ ᴜsᴇʀʙᴏᴛ.. https://telegra.ph{} ".format(
+                    "File uploaded ser By ɓ乛ℓα૮ µรε૨ɓσƭ ᴛʜᴇ ʙᴇsᴛ ᴜsᴇʀʙᴏᴛ.. https://telegra.ph{} ".format(
                         media_urls[0], (ms + ms_two)
                     ),
                     link_preview=True,

@@ -68,17 +68,17 @@ class Config(object):
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/KeinShin/Black-Lightning"
+        "UPSTREAM_REPO", "https://github.com/B-Lac/B-Lac-Userbot"
     )
     ALIVE_PIC = os.environ.get(
-        "ALIVE_IMAGE", "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
+        "ALIVE_IMAGE", "https://telegra.ph/file/76daded01da7289d0bd4d.jpg"
     )
     ALIVE_IMAGE = os.environ.get(
-        "ALIVE_PIC", "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
+        "ALIVE_PIC", "https://telegra.ph/file/76daded01da7289d0bd4d.jpg"
     )
     ASSISTANT_START_PIC = os.environ.get(
         "ASSISTANT_START_PIC",
-        "https://telegra.ph/file/b233f8b6332fbeb3f61dc.mp4",
+        "https://telegra.ph/file/76daded01da7289d0bd4d.jpg",
     )
     TESSDATA_PREFIX = os.environ.get(
         "TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata"

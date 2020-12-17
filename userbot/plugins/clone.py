@@ -10,7 +10,7 @@ from userbot.utils import admin_cmd
 from .. import ALIVE_NAME, CMD_HELP
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Black Lightning"
-DEFAULTUSERBIO = "404: No bio found!"
+DEFAULTUSERBIO = "404: Teri Maa Ki Chut!"
 if Var.PRIVATE_GROUP_ID is None:
     BOTLOG = False
 else:

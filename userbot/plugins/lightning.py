@@ -12,11 +12,11 @@ from userbot.plugins import inlinestats
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-    WARN_PIC = "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
+    WARN_PIC = "https://telegra.ph/file/76daded01da7289d0bd4d.jpg"
 else:
     WARN_PIC = PMPERMIT_PIC
 LOG_CHAT = Var.PRIVATE_GROUP_ID
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "вℓα¢к ℓιgнтиιиg"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ɓ乛ℓα૮ µรε૨ɓσƭ"
 
 
 @tgbot.on(events.InlineQuery)
@@ -24,7 +24,7 @@ async def inline_handler(event):
     builder = event.builder
     result = None
     query = event.text
-    if event.query.user_id == bot.uid and query.startswith("вℓα¢к ℓιgнтиιиg"):
+    if event.query.user_id == bot.uid and query.startswith("ɓ乛ℓα૮ µรε૨ɓσƭ"):
         rev_text = query[::-1]
         paginate_help(0, CMD_HELP, "helpme")
 
@@ -32,15 +32,15 @@ async def inline_handler(event):
     elif event.query.user_id == bot.uid and query == "stats":
         result = builder.article(
             title="Stats",
-            text=f"**Showing Stats For {DEFAULTUSER}'s вℓα¢к ℓιgнтиιиg** \nNote --> Only Owner Can Check This \n(C) @blacklightningot",
+            text=f"**Showing Stats For {DEFAULTUSER}'s ɓ乛ℓα૮ µรε૨ɓσƭ** \nNote --> Only Owner Can Check This \n(C) @BLACUSERBOT",
             buttons=[
                 [custom.Button.inline("Show Stats ", data="terminator")],
                 [
                     Button.url(
-                        "Repo 🇮🇳", "https://github.com/Anmol-dot283/Black-Lightning"
+                        "Repo 🇮🇳", "https://github.com/B-Lac/B-Lac-Userbot"
                     )
                 ],
-                [Button.url("Join Channel ❤️", "t.me/blacklightningot")],
+                [Button.url("Join Channel ❤️", "t.me/BLACUSERBOT")],
             ],
         )
         await event.answer([result])
@@ -137,7 +137,7 @@ async def sed(event):
         return
     buttons = paginate_help(0, CMD_HELP, "helpme")
     sed = f"""Friday Userbot Modules Are Listed Here !\n
-For More Help or Support Visit @blacklightningot \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
+For More Help or Support Visit @BLACUSERBOT \nCurrently Loaded Plugins: {len(CMD_LIST)}"""
     await event.edit(message=sed, buttons=buttons)
 
 
@@ -340,7 +340,7 @@ async def inline_handler(event):
     if query == None:
         resulte = builder.article(
             title="Usage Guide.",
-            description="(C) @blacklightningot",
+            description="(C) @BLACUSERBOT",
             text=f"**How To Use Me?** \n**Youtube :** `@{firstname} yt <query>` \n**Example :** `@{firstname} yt why we lose song` \n\n**Torrent :** `@{firstname} torrent <query>` \n**Example :** `@{firstname} torrent avengers endgame ` \n\n**JioSaavan :** `@{firstname} jm <query>` \n**Example :** `@{firstname} jm dilbaar`",
             buttons=[
                 [Button.url("Contact Me", f"t.me/{firstname}")],

@@ -87,7 +87,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if heroku_app is None:
             await event.edit(
                 f"{txt}\n"
-                "**Invalid Heroku credentials for deploying Black Lightning dyno.**"
+                "**Invalid Heroku credentials for deploying ɓ乛ℓα૮ µรε૨ɓσƭ dyno.**"
             )
             return repo.__del__()
         ups_rem.fetch(ac_br)
