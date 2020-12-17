@@ -1,110 +1,78 @@
-# Logo
-<p align="center"><a href="https://t.me/blackBlack Lightning support"><img src="https://telegra.ph/file/230040f2c873f40ea8768.jpg"></a></p> 
-<h1 align="center"><b>Black Lightning-USERBOT 🇮🇳 </b></h1>
-<h4 align="center">A Powerful, Smart And Simple Userbot In Telethon.</h4>
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)](https://app.codacy.com/gh/HellBoy-OP/HellBot?utm_source=github.com&utm_medium=referral&utm_content=HellBoy-OP/HellBot&utm_campaign=Badge_Grade_Settings)
+[![Python 3.6](https://img.shields.io/badge/Python-3.6%20or%20newer-blue.svg)](https://www.python.org/downloads/release/python-360/)
+![GitHub repo size](https://img.shields.io/github/repo-size/HellBoy-OP/Hellbot)
+[![HitCount](http://hits.dwyl.com/HellBoy-OP/HellBot.svg)](http://hits.dwyl.com/HellBoy-OP/HellBot)
+[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/krish1303y)
 
 
+# †hê B乛LAC Uʂҽɾზσƚ
+This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
+
+This is the one and only official HellBot Userbot made by [@krish1303y](https://t.me/krish1303y) Also join support channel and group :- https://t.me/BLAC_USERBOT_SUPPORT Enjoy Your Bot!!💝
+[![乛LAC Uʂҽɾზσƚ](https://telegra.ph/file/76daded01da7289d0bd4d.jpg)](https://t.me/BLAC_USERBOT_SUPPORT)
 
 
-
-# Support
-
-<a href="https://t.me/blackBlack Lightning support"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-
-<a href="https://t.me/blackBlack Lightning support"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+# The owner would not be responsible for any kind of bans due to the bot...
 
 
+# For any query:-
+### [Join Here For Any Query](https://t.me/BLAC_USERBOT_SUPPORT)
 
-
-# How To
-
-<a href="https://youtu.be/xfHcm_e92eQ"><img src="https://img.shields.io/badge/How%20To-Deploy-red.svg?logo=Youtube"></a>
-
-<a href="https://app.gitbook.com/@poxsisofficial/s/blackBlack Lightning /"><img src="https://img.shields.io/badge/Read%20More-GitBook-red.svg"></a>
-
-
-
+# FORK AT YOUR OWN RISK
+## Installing
 
 
 # Deploy
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/KeinShin/Black-Lightning)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot)
 
+# Credits👀
+### • [JaaduBot](https://github.com/Amberyt/JaaduBot)
+## One and only. Others with some misfuntioning brain stay out from this SUPER POWERFULL BOT😏
 
+## Official Support 💖
+<a href="https://t.me/BLAC_USERBOT_SUPPORT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/BLAC_USERBOT_SUPPORT_Chat"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
-
-# String
-
-[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@Anmol10H/Lightning-Repl#main.py)
-
-
-
-
-# The Normal Way
+## The Normal Way
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github/KienShin/Black-Lightning
-cd Black Lightning 
+git clone https://github.com/B-Lac/B-Lac-Userbot
+cd HellBot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
 # <Create local_config.py with variables as given below>
-python3 -m Black-Lightning
+python3 -m userbot
 ```
 
+An example `local_config.py` file could be:
 
-#  Credits
+**Not All of the variables are mandatory**
 
-<h3 style="text-align: left;">
-<a href="http://jarvisuserbot.com/">JARVISUserBot</a></h3>
-<h3 style="box-sizing: border-box; font-size: 1.25em; line-height: 1.25; margin-bottom: 16px; margin-top: 24px;">
-<a href="http://github.com/starkgang/FridayUserbot">FridayUserBot</a></h3>
-<h3 style="box-sizing: border-box; font-size: 1.25em; line-height: 1.25; margin-bottom: 16px; margin-top: 24px;">
-<a aria-hidden="true" class="anchor" href="https://github.com/hellboi-atul/hellboi-atul/blob/master/README.md#catuserbot" id="user-content-catuserbot" style="background-color: initial; box-sizing: border-box; color: #0366d6; float: left; line-height: 1; margin-left: -20px; padding-right: 4px; text-decoration-line: none;"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a><a href="https://github.com/jarvis210904/J.A.R.V.I.S-Userbot#catuserbot" id="user-content-catuserbot" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"></a>CatUserbot</h3>
-<h3 style="box-sizing: border-box; font-size: 1.25em; line-height: 1.25; margin-bottom: 16px; margin-top: 24px;">
-<a aria-hidden="true" class="anchor" href="https://github.com/hellboi-atul/hellboi-atul/blob/master/README.md#munnipopz" id="user-content-munnipopz" style="background-color: initial; box-sizing: border-box; color: #0366d6; float: left; line-height: 1; margin-left: -20px; padding-right: 4px; text-decoration-line: none;"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a><a href="https://github.com/jarvis210904/J.A.R.V.I.S-Userbot#munnipopz" id="user-content-munnipopz" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"></a>Munnipopz</h3>
-<h3 style="box-sizing: border-box; font-size: 1.25em; line-height: 1.25; margin-bottom: 16px; margin-top: 24px;">
-<a aria-hidden="true" class="anchor" href="https://github.com/hellboi-atul/hellboi-atul/blob/master/README.md#Uniborg" id="user-content-Uniborg" style="background-color: initial; box-sizing: border-box; color: #0366d6; float: left; line-height: 1; margin-left: -20px; padding-right: 4px; text-decoration-line: none;"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a><a href="https://github.com/jarvis210904/J.A.R.V.I.S-Userbot#Uniborg" id="user-content-Uniborg" style="background-color: initial; box-sizing: border-box; color: #0366d6; text-decoration-line: none;"></a>Uniborg🤗</h3>
+__The Userbot should work by setting only the first two variables__
 
+```python3
+from heroku_config import Var
 
-# Special Credit
-<h3 style="text-align: left;">
-<a href="https://github.com/DARK-COBRA/DARKCOBRA">DARK COBRA</a></h3>
-<h3 style="box-sizing: border-box; font-size: 1.25em; line-height: 1.25; margin-bottom: 16px; margin-top: 24px;">
-
-
-# Mandatory Vars
-```
-[+] Only two of the environment variables are mandatory.
-
-[+] This is because of telethon.errors.rpc_error_list.ApiIdPublishedFloodError
-
-    [-] APP_ID:   You can get this value from https://my.telegram.org
-    [-] API_HASH :   You can get this value from https://my.telegram.org
-    
-[+] The Lightning Bot will not work without setting the mandatory vars.
+class Development(Var):
+  APP_ID = 6
+  API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
 ```
 
 
 
+**Heroku Configuration**
+Simply just leave the Config as it is.
 
+**Local Configuration**
+Fortunately there are no Mandatory vars for the UniBorg Support Config.
 
+## Mandatory Vars
 
-
-
-
-# Licence
-[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
-
-Black Lightning Userbot is Free Software: You can use, study share and improve it at your
-will. Specifically you can redistribute and/or modify it under the terms of the
-[GNU General Public License](https://www.gnu.org/licenses/gpl.html) as
-published by the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version. 
-
-
-
-
-
-
+- Only two of the environment variables are mandatory.
+- This is because of `telethon.errors.rpc_error_list.ApiIdPublishedFloodError`
+    - `APP_ID`:   You can get this value from https://my.telegram.org
+    - `API_HASH`:   You can get this value from https://my.telegram.org
+- The userbot will not work without setting the mandatory vars.
