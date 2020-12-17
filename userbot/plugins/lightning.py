@@ -35,11 +35,7 @@ async def inline_handler(event):
             text=f"**Showing Stats For {DEFAULTUSER}'s ɓ乛ℓα૮ µรε૨ɓσƭ** \nNote --> Only Owner Can Check This \n(C) @BLACUSERBOT",
             buttons=[
                 [custom.Button.inline("Show Stats ", data="terminator")],
-                [
-                    Button.url(
-                        "Repo 🇮🇳", "https://github.com/B-Lac/B-Lac-Userbot"
-                    )
-                ],
+                [Button.url("Repo 🇮🇳", "https://github.com/B-Lac/B-Lac-Userbot")],
                 [Button.url("Join Channel ❤️", "t.me/BLACUSERBOT")],
             ],
         )
