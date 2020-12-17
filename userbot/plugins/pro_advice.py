@@ -14,7 +14,7 @@ from userbot.utils import admin_cmd
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Well, let me give you a life-pro tip... 😉")
+    await event.edit("Ruko Jara Sabar Karo, let me give you a life-pro tip... 😉")
     await asyncio.sleep(2)
     x = random.randrange(1, 87)
     if x == 1:

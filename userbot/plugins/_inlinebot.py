@@ -15,7 +15,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/e3b456e31cba8308b7a80.png"
+    else "https://telegra.ph/file/76daded01da7289d0bd4d.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -29,9 +29,9 @@ LOG_GP = Var.PRIVATE_GROUP_ID
 MESAG = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
-    else "`𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 PM security! Please wait for me to approve you. 😊"
+    else "` B乛LAC Uʂҽɾზσƚ PM security! Please wait for me to approve you. 😊"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else " B乛LAC Uʂҽɾზσƚ User"
 USER_BOT_WARN_ZERO = "`I had warned you not to spam. Now you have been blocked and reported until further notice.`\n\n**GoodBye!** "
 
 if Var.LOAD_MYBOT == "True":
@@ -71,7 +71,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             rev_text = query[::-1]
             buttons = paginate_help(0, CMD_LIST, "helpme")
             result = builder.article(
-                "© 𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 Help",
+                "©  B乛LAC Uʂҽɾზσƚ Help",
                 text="{}\nCurrently Loaded Plugins: {}".format(query, len(CMD_LIST)),
                 buttons=buttons,
                 link_preview=False,
@@ -79,14 +79,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "stats":
             result = builder.article(
                 title="Stats",
-                text=f"**𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n(c) @blacklightningot",
+                text=f"** B乛LAC Uʂҽɾზσƚ Stats For [{DEFAULTUSER}](tg://user?id={myid})**\n\n__Bot is functioning normally, master!__\n\n(c) @BLACUSERBOT",
                 buttons=[
                     [custom.Button.inline("Stats", data="statcheck")],
-                    [Button.url("Repo", "https://github.com/KeinShin/Black-Lightning")],
+                    [Button.url("Repo", "https://github.com/B-Lac/B-Lac-Userbot")],
                     [
                         Button.url(
                             "Deploy Now!",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FKeinShin%2FBlack-Lightning&template=https%3A%2F%2Fgithub.com%2FKeinShin%2FBlack-Lightning",
+                            "https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot",
                         )
                     ],
                 ],
@@ -108,40 +108,40 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 - Telegram Userbot.",
+                text=f" B乛LAC Uʂҽɾზσƚ - Telegram Userbot.",
                 buttons=[
                     [
                         Button.url(
-                            "Repo", "https://github.com/KeinShin/Black-Lightning"
+                            "Repo", "https://github.com/B-Lac/B-Lac-Userbot"
                         ),
                         Button.url(
                             "Deploy",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FKeinShin%2FBlack-Lightning&template=https%3A%2F%2Fgithub.com%2FKeinShin%2FBlack-Lightning",
+                            "https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot",
                         ),
                     ],
-                    [Button.url("Support", "https://t.me/blacklightningot")],
+                    [Button.url("Support", "https://t.me/BLACUSERBOT")],
                 ],
             )
         else:
             result = builder.article(
                 "Source Code",
-                text="**Welcome to 𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤**\n\n`Click below buttons for more`",
+                text="**Welcome to  B乛LAC Uʂҽɾზσƚ**\n\n`Click below buttons for more`",
                 buttons=[
                     [custom.Button.url("Creator👨‍🦱", "https://t.me/krish1303y")],
                     [
                         custom.Button.url(
                             "👨‍💻Source Code‍💻",
-                            "https://github.com/KeinShin/Black-Lightning",
+                            "https://github.com/B-Lac/B-Lac-Userbot",
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FKeinShin%2FBlack-Lightning&template=https%3A%2F%2Fgithub.com%2FKeinShin%2FBlack-Lightning",
+                            "https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot",
                         ),
                     ],
                     [
                         custom.Button.url(
                             "Updates and Support Group↗️",
-                            "https://t.me/blacklightningot",
+                            "https://t.me/BLACUSERBOT",
                         )
                     ],
                 ],
@@ -161,7 +161,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             # https://t.me/TelethonChat/115200
             await event.edit(buttons=buttons)
         else:
-            reply_pop_up_alert = "Bhak Bsdk Kya Tapa Tap Daba Rha Rha Nikal Leya Apna 𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 from @blacklightningot , and don't use mine!"
+            reply_pop_up_alert = "Bhak Bsdk Kya Tapa Tap Daba Rha Rha Nikal Leya Apna  B乛LAC Uʂҽɾზσƚ from @BLACUSERBOT , and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"pmclick")))
@@ -171,7 +171,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards and Can Ban Fuckin Spammers.\n\nProtected by [𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤](t.me/blacklightningot)"
+                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards and Can Ban Fuckin Spammers.\n\nProtected by [ B乛LAC Uʂҽɾზσƚ](t.me/BLACUSERBOT)"
             )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"reopen")))
@@ -263,7 +263,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 "Menu Closed!!", buttons=[Button.inline("Re-open Menu", data="reopen")]
             )
         else:
-            reply_pop_up_alert = "Bhak Bsdk Kya Tapa Tap Daba Rha Rha Nikal Leya Apna 𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 from @blacklightningot , and don't use mine!"
+            reply_pop_up_alert = "Bhak Bsdk Kya Tapa Tap Daba Rha Rha Nikal Leya Apna  B乛LAC Uʂҽɾზσƚ from @BLACUSERBOT , and don't use mine!"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"statcheck")))
@@ -316,7 +316,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             else:
                 reply_pop_up_alert = help_string
             reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-                © 𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤".format(
+                ©  B乛LAC Uʂҽɾზσƚ".format(
                 plugin_name
             )
             if len(help_string) >= 140:

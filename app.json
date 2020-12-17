@@ -1,7 +1,7 @@
 {
-  "name": "Black Lightning - UserBot",
+  "name": "ɓ乛ℓα૮ µรε૨ɓσƭ",
   "description": "An advanced Telethon Userbot, from @krish1303y",
-  "logo": "https://telegra.ph/file/d8d194c18562472a7c1f1.jpg",
+  "logo": "https://telegra.ph/file/76daded01da7289d0bd4d.jpg",
   "keywords": [
    "telegram",
    "userbot",
@@ -9,9 +9,9 @@
    "modular",
    "productivity"
   ],
-  "repository": "https://github.com/KeinShin/Black-Lightning",
-  "website": "https://github.com/KeinShin/Black-Lightning",
-  "success_url": "https://t.me/blacklightningot",
+  "repository": "https://github.com/B-Lac/B-Lac-Userbot",
+  "website": "https://github.com/B-Lac/B-Lac-Userbot",
+  "success_url": "https://t.me/BLACUSERBOT",
   "stack": "container",
   "env": {
    "ENV": {
@@ -32,7 +32,7 @@
     "value": ""
    },
    "STRING_SESSION": {
-    "description": "Get this value by running python3 telesetup.py locally or https://repl.it/@Anmol10H/Lightning-Userbot#main.py online.",
+    "description": "Get this value by running python3 telesetup.py locally or https://repl.it/@PoxsisYT/B-Lac#main.py",
     "value": ""
    },  
    "CUSTOM_PMPERMIT": {
@@ -89,7 +89,7 @@
     },
     "ALIVE_PHOTTO": {
       "description": "Let it be what it is(skip)..or you can change the link according to your convince..this link is useful for `.awake` command.",
-      "value": "https://telegra.ph/file/e197eefe737d020c213af.mp4",
+      "value": "https://telegra.ph/file/76daded01da7289d0bd4d.jpg",
       "required": true
     },
     "CHROME_BIN": {

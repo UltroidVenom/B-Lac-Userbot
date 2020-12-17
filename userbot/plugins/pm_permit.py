@@ -12,7 +12,7 @@ from userbot.utils import admin_cmd
 
 PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 if PMPERMIT_PIC is None:
-    WARN_PIC = "https://telegra.ph/file/e3b456e31cba8308b7a80.jpg"
+    WARN_PIC = "https://telegra.ph/file/76daded01da7289d0bd4d.jpg"
 else:
     WARN_PIC = PMPERMIT_PIC
 
@@ -22,12 +22,12 @@ myid = bot.uid
 MESAG = (
     str(CUSTOM_PMPERMIT)
     if CUSTOM_PMPERMIT
-    else "`𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 PM security! Please wait for me to approve you. 😊"
+    else "` B乛LAC Uʂҽɾზσƚ PM security! Please wait for me to approve you. 😊"
 )
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤 User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else " B乛LAC Uʂҽɾზσƚ User"
 USER_BOT_WARN_ZERO = "`I had warned you not to spam. Now you have been blocked and reported until further notice.`\n\n**GoodBye!** "
 USER_BOT_NO_WARN = (
-    "**PM Security ~ 𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤**\n\nNice to see you here, but  "
+    "**PM Security ~  B乛LAC Uʂҽɾზσƚ**\n\nNice to see you here, but  "
     "[{}](tg://user?id={}) is currently unavailable.\nDontTry To Spam In My Master  DM or You'll Be Banned In Fucin Few Seconds.\n\n"
     "{}\n\n**You have** `{}/{}` **warnings...**"
     "\n\n   ~ Thank You."
@@ -129,7 +129,7 @@ async def approve_p_m(event):
     if event.fwd_from:
         return
     approved_users = pmpermit_sql.get_all_approved()
-    APPROVED_PMs = "[𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤] Currently Approved PMs\n"
+    APPROVED_PMs = "[ B乛LAC Uʂҽɾზσƚ] Currently Approved PMs\n"
     if len(approved_users) > 0:
         for a_user in approved_users:
             if a_user.reason:
@@ -146,7 +146,7 @@ async def approve_p_m(event):
                 out_file,
                 force_document=True,
                 allow_cache=False,
-                caption="[𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤]Current Approved PMs",
+                caption="[ B乛LAC Uʂҽɾზσƚ]Current Approved PMs",
                 reply_to=event,
             )
             await event.delete()
@@ -297,7 +297,7 @@ CMD_HELP.update(
         \n\n.disapprove/.da\nUse - DisApprove PM\
         \n\n.listapproved\nUse - Get all approved PMs.\
         \n\nSet var PMPERMIT_PIC for custom PMPic, CUSTOM_PMPERMIT for custom text, PMSECURITY <on/off> to enable/disable, INSTANT_BLOCK <on/off>.\
-        \nGet help from @blacklightningot."
+        \nGet help from @BLACUSERBOT."
     }
 )
-# (c) 𝔅𝔩𝔞𝔠𝔨 𝔏𝔦𝔤𝔥𝔱𝔫𝔦𝔫𝔤
+# (c)  B乛LAC Uʂҽɾზσƚ
