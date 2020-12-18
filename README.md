@@ -1,15 +1,14 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)](https://app.codacy.com/gh/HellBoy-OP/HellBot?utm_source=github.com&utm_medium=referral&utm_content=HellBoy-OP/HellBot&utm_campaign=Badge_Grade_Settings)
 [![Python 3.6](https://img.shields.io/badge/Python-3.6%20or%20newer-blue.svg)](https://www.python.org/downloads/release/python-360/)
-![GitHub repo size](https://img.shields.io/github/repo-size/HellBoy-OP/Hellbot)
-[![HitCount](http://hits.dwyl.com/HellBoy-OP/HellBot.svg)](http://hits.dwyl.com/HellBoy-OP/HellBot)
-[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/krish1303y)
+![GitHub repo size](sttp://hits.dwyl.com/HellBoy-OP/HellBot)
+[![Contact Me](z)](https://t.me/krish1303y)
 
 
 # OFFCIAL B乛LAC USERBOT
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
 This is the one and only official B Lac Userbot made by [@JATTGAMINGYT11](https://t.me/krish1303y) Also join support channel and group :- https://t.me/BLAC_USERBOT_SUPPORT Enjoy Your Bot!!💝
-[![B乛LAC USERBOT] https://telegra.ph/file/149e99bfb7eb76dabc8af.jpg ](https://t.me/BLAC_USERBOT_SUPPORT)
+[![B乛LAC USERBOT]https://telegra.ph/file/c5471e25c13099416bd75.jpg](https://t.me/BLAC_USERBOT_SUPPORT)
 
 
 # The owner would not be responsible for any kind of bans due to the bot...
