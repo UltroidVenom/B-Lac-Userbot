@@ -160,7 +160,7 @@ async def spammer(e):
         await edit_or_reply(e, "try again something went wrong or check `.info spam`")
 
 
-@bot.on(outgoing=True, pattern="^.bigspam")
+@bot.on(admin_cmd(pattern="bigspam (.*)"))
 async def bigspam(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         message = e.text
