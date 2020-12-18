@@ -55,12 +55,17 @@ pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/krish1303y)\n\n"
 
 pm_caption += "🔥ɮ-ʟǟƈ ɢǟռɢ օառɛʀ🔥    : [Pro Here](https://t.me/JATTGAMINGYT11)\n\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/B-Lac/B-Lac-Userbot) 🔹 [📜License📜](https://github.com/B-Lac/B-Lac-Userbot/blob/master/LICENSE)"
+pm_caption += "    [✨REPO✨](https://github.com/B-Lac/B-Lac-Userbot) 🔹 [📜License📜](https://github.com/B-Lac/B-Lac-Userbot/blob/master/LICENSE)\n"
 
-pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein"
+pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein\n\n"
+
 
 pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
+pm_caption += ( 
+             "░█▀▀█ ── ░█─── █▀▀█ █▀▀ 　 ░█▀▀█ █▀▀█ █▀▀▄ █▀▀▀ \n"
+             "░█▀▀▄ ▀▀ ░█─── █▄▄█ █── 　 ░█─▄▄ █▄▄█ █──█ █─▀█ \n"
+             "░█▄▄█ ── ░█▄▄█ ▀──▀ ▀▀▀ 　 ░█▄▄█ ▀──▀ ▀──▀ ▀▀▀▀\n")
 
 @borg.on(admin_cmd(pattern=r"alive"))
 @borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
