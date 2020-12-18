@@ -62,10 +62,12 @@ pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein\n\n"
 
 pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
-pm_caption += ( 
-             "░█▀▀█ ── ░█─── █▀▀█ █▀▀ 　 ░█▀▀█ █▀▀█ █▀▀▄ █▀▀▀ \n"
-             "░█▀▀▄ ▀▀ ░█─── █▄▄█ █── 　 ░█─▄▄ █▄▄█ █──█ █─▀█ \n"
-             "░█▄▄█ ── ░█▄▄█ ▀──▀ ▀▀▀ 　 ░█▄▄█ ▀──▀ ▀──▀ ▀▀▀▀\n")
+pm_caption += (
+    "░█▀▀█ ── ░█─── █▀▀█ █▀▀ 　 ░█▀▀█ █▀▀█ █▀▀▄ █▀▀▀ \n"
+    "░█▀▀▄ ▀▀ ░█─── █▄▄█ █── 　 ░█─▄▄ █▄▄█ █──█ █─▀█ \n"
+    "░█▄▄█ ── ░█▄▄█ ▀──▀ ▀▀▀ 　 ░█▄▄█ ▀──▀ ▀──▀ ▀▀▀▀\n"
+)
+
 
 @borg.on(admin_cmd(pattern=r"alive"))
 @borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
