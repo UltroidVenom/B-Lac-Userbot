@@ -58,7 +58,7 @@ async def install(event):
                 shortname = path1.stem
                 load_module(shortname.replace(".py", ""))
                 await event.edit(
-                    "Lightning  successfully installed this plguin\n @BLACUSERBOT `{}`".format(
+                    "B-Lac  successfully installed this plguin\n @BLACUSERBOT `{}`".format(
                         os.path.basename(downloaded_file_name)
                     )
                 )
