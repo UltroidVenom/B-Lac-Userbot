@@ -30,20 +30,26 @@ file2 = "https://telegra.ph/file/e972cfa8e9af3f41c3e41.mp4"
 file3 = "https://telegra.ph/file/546dec0b6ce4b7e35a381.mp4"
 file4 = "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
 """ =======================CONSTANTS====================== """
-pm_caption = "**  B乛LAC Uʂҽɾზσƚ 𝙸𝚂 𝙾𝙽𝙻𝙸𝙽𝙴**\n\n"
+pm_caption = "**B乛LAC Uʂҽɾზσƚ 𝙸𝚂 𝙾𝙽𝙻𝙸𝙽𝙴**\n\n"
 pm_caption += (
     "**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
 )
-pm_caption += "**I Will Be With You Until My Dynos Dead"
-pm_caption += "✘ About My System ✘\n\n"
-pm_caption += "➾ **`ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ`** ☞ 1.17.5\n"
-pm_caption += "➾ **`ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ`** ☞ [ᴊᴏɪɴ](https://t.me/BLACUSERBOT)\n"
-pm_caption += "➾ **`ʟɪᴄᴇɴꜱᴇ`**  ☞ [ B乛LAC Uʂҽɾზσƚ](https://github.com/KeinShin)\n"
-pm_caption += "➾ **`ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ`** ☞ [ B乛LAC Uʂҽɾზσƚ](https://github.com/KeinShin/Black-Lightning)\n\n"
-pm_caption += (
-    "➾ **Hey Whoever Is Seein This Alive Dont Dm  And Dont Spam In My  Master DM"
-)
+pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
+
+pm_caption += f"😈B乛LAC Uʂҽɾზσƚ😈       : __**{hellversion}**__\n"
+
+pm_caption += f"⚜️Sudo⚜️            : `{sudou}`\n"
+
+pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/BLACUSERBOT)\n"
+
+pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/krish1303y)\n\n"
+
+pm_caption += "🔥B Lac Owner🔥    : [Nub Here](https://t.me/JATTGAMINGYT11)\n\n"
+
+pm_caption += "    [✨REPO✨](https://github.com/B-Lac/B-Lac-Userbot) 🔹 [📜License📜](https://github.com/B-Lac/B-Lac-Userbot/blob/master/LICENSE)"
+
 pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein"
+
 pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
 
