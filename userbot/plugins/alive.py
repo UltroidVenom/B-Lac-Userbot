@@ -11,11 +11,19 @@ from PIL import Image
 
 from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd, sudo_cmd
-
+from userbot.thunderconfig import Config
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else " B乛LAC Uʂҽɾზσƚ"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
+hellversion = "12.3"
+ludosudo = Config.SUDO_USERS
 
+if ludosudo:
+    sudou = "True"
+else:
+    sudou = "False"
+
+kraken = bot.uid
 # Thanks to Sipak bro and Raganork..
 # animation Idea by @NOOB_GUY_OP (Sipakisking)
 # Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
