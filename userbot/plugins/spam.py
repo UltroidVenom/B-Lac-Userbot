@@ -196,6 +196,23 @@ async def tmeme(e):
             )
 
 
+
+@bot.on(admin_cmd(pattern="mspam (.*)"))
+async def tiny_pic_spam(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        message = e.text
+        text = message.split()
+        counter = int(text[1])
+        link = str(text[2])
+        for i in range(1, counter):
+            await e.client.send_file(e.chat_id, link)
+        await e.delete()
+        if LOGGER:
+            await e.client.send_message(
+                LOGGER_GROUP,
+                "#PICSPAM \n\n"
+                "PicSpam was executed successfully"
+                )
 @bot.on(admin_cmd("delayspam (.*)"))
 @bot.on(sudo_cmd(pattern="delayspam (.*)", allow_sudo=True))
 async def spammer(e):
