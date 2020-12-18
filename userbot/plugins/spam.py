@@ -210,8 +210,6 @@ async def tiny_pic_spam(e):
             await e.client.send_message(
                 LOGGER_GROUP, "#PICSPAM \n\n" "PicSpam was executed successfully"
             )
-
-
 @bot.on(admin_cmd("delayspam (.*)"))
 @bot.on(sudo_cmd(pattern="delayspam (.*)", allow_sudo=True))
 async def spammer(e):
