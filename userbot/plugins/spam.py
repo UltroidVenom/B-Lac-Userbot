@@ -11,6 +11,7 @@ from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 LOGGER_GROUP = Config.PRIVATE_GROUP_BOT_API_ID
 
+
 @bot.on(admin_cmd(pattern="spam (.*)"))
 @bot.on(sudo_cmd(pattern="spam (.*)", allow_sudo=True))
 async def spammer(e):
@@ -170,11 +171,9 @@ async def bigspam(e):
         await e.delete()
         if LOGGER:
             await e.client.send_message(
-                LOGGER_GROUP,
-                "#BIGSPAM \n\n"
-                "Bigspam was executed successfully"
-                )
-        
+                LOGGER_GROUP, "#BIGSPAM \n\n" "Bigspam was executed successfully"
+            )
+
 
 @bot.on(admin_cmd("wspam (.*)"))
 @bot.on(sudo_cmd(pattern="wspam (.*)", allow_sudo=True))
