@@ -9,7 +9,6 @@ from userbot import CMD_HELP
 from userbot.plugins import BOTLOG, BOTLOG_CHATID
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
-LOGGER_GROUP = Config.PRIVATE_GROUP_BOT_API_ID
 
 
 @bot.on(admin_cmd(pattern="spam (.*)"))
