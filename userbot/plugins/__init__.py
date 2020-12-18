@@ -65,7 +65,7 @@ else:
 
 
 inlinestats = (
-    f"✘ SHOWING Black Lightning STATS ✘\n"
+    f"✘ SHOWING B LAC STATS ✘\n"
     f"VERSION = {currentversion} \n"
     f"DATABASE = {dbstats} \n"
     f"SUDO = {amiusingsudo} \n"
