@@ -10,7 +10,6 @@ from userbot.plugins import BOTLOG, BOTLOG_CHATID
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
-
 @bot.on(admin_cmd(pattern="spam (.*)"))
 @bot.on(sudo_cmd(pattern="spam (.*)", allow_sudo=True))
 async def spammer(e):
