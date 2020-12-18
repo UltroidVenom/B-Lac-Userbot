@@ -633,7 +633,7 @@ def start_assistant(shortname):
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Initialising Lightning.")
-        print("Lightning - Imported " + shortname)
+        print("B-Lac - Imported " + shortname)
     else:
         import importlib
         import sys
@@ -646,7 +646,7 @@ def start_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant" + shortname] = mod
-        print("Lightning Has imported " + shortname)
+        print("B-Lac Has imported " + shortname)
 
 
 def load_assistant(shortname):
@@ -663,7 +663,7 @@ def load_assistant(shortname):
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         print("Initialising Lightning.")
-        print("Lightning - Imported " + shortname)
+        print("B LAc - Imported " + shortname)
     else:
         import importlib
         import sys
@@ -676,4 +676,4 @@ def load_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant." + shortname] = mod
-        print("Lightning Has imported " + shortname)
+        print("B-Lac Has imported " + shortname)
