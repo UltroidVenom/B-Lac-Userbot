@@ -56,8 +56,16 @@ if isdbfine:
 else:
     dbstats = "Not Fine ❌"
 
+if Config.PRIVATE_GROUP_BOT_API_ID is None:
+    BOTLOG = False
+    BOTLOG_CHATID = "me"
+else:
+    BOTLOG = True
+    BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
+    
+    
 inlinestats = (
-    f"✘ Showing ɓ乛ℓα૮ µรε૨ɓσƭ Stats ✘\n"
+    f"✘ SHOWING Black Lightning STATS ✘\n"
     f"VERSION = {currentversion} \n"
     f"DATABASE = {dbstats} \n"
     f"SUDO = {amiusingsudo} \n"
