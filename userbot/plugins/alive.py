@@ -39,7 +39,7 @@ file2 = "https://telegra.ph/file/e972cfa8e9af3f41c3e41.mp4"
 file3 = "https://telegra.ph/file/546dec0b6ce4b7e35a381.mp4"
 file4 = "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
 """ =======================CONSTANTS====================== """
-pm_caption = "**B乛LAC Uʂҽɾზσƚ 𝙸𝚂 𝙾𝙽𝙻𝙸𝙽𝙴**\n\n"
+pm_caption = "**B乛LAC Uʂҽɾზσƚ 𝙸𝚂 🅾🅽🅻🅸🅽🅴**\n\n"
 pm_caption += (
     "**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n"
 )
@@ -47,13 +47,13 @@ pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
 
 pm_caption += f"😈B乛LAC Uʂҽɾზσƚ😈       : __**{hellversion}**__\n"
 
-pm_caption += f"⚜️Sudo⚜️            : `{sudou}`\n"
+pm_caption += f"⚜️ѕυ∂σ⚜️            : `{sudou}`\n"
 
-pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/BLACUSERBOT)\n"
+pm_caption += "⚠️🄲🄷🄰🄽🄽🄴🄻⚠️   : [ᴊᴏɪɴ](https://t.me/BLACUSERBOT)\n"
 
 pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/krish1303y)\n\n"
 
-pm_caption += "🔥B Lac Owner🔥    : [Nub Here](https://t.me/JATTGAMINGYT11)\n\n"
+pm_caption += "🔥ɮ-ʟǟƈ ɢǟռɢ օառɛʀ🔥    : [Pro Here](https://t.me/JATTGAMINGYT11)\n\n"
 
 pm_caption += "    [✨REPO✨](https://github.com/B-Lac/B-Lac-Userbot) 🔹 [📜License📜](https://github.com/B-Lac/B-Lac-Userbot/blob/master/LICENSE)"
 
