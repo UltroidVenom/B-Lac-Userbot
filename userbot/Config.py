@@ -21,6 +21,11 @@ class Var(object):
     WHITELIST_USERS = set(
         int(x) for x in os.environ.get("WHITELIST_USERS", "1311769691").split()
     )
+    MAX_ANTI_FLOOD_MESSAGES = 10
+    # warn mode for anti flood
+    ANTI_FLOOD_WARN_MODE = ChatBannedRights(
+        until_date=None, view_messages=None, send_messages=True
+    )
     BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
     DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "1311769691").split())
     OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "1311769691").split())
@@ -65,7 +70,7 @@ class Var(object):
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/B-Lac/B-Lac-Userbot"
+        "UPSTREAM_REPO", "https://github.com/KeinShin/Black-Lightning"
     )
     ALIVE_PIC = os.environ.get(
         "ALIVE_IMAGE", "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
@@ -75,7 +80,7 @@ class Var(object):
     )
     ASSISTANT_START_PIC = os.environ.get(
         "ASSISTANT_START_PIC",
-        "https://telegra.ph/file/76daded01da7289d0bd4d.jpg",
+        "https://telegra.ph/file/b233f8b6332fbeb3f61dc.mp4",
     )
     TESSDATA_PREFIX = os.environ.get(
         "TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata"
