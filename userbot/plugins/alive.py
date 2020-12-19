@@ -46,7 +46,6 @@ pm_caption += f"😈B乛LAC Uʂҽɾზσƚ😈       : __**{hellversion}**__\n"
 pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
 
 
-
 pm_caption += f"⚜️ѕυ∂σ⚜️            : `{sudou}`\n"
 
 pm_caption += "⚠️🄲🄷🄰🄽🄽🄴🄻⚠️   : [ᴊᴏɪɴ](https://t.me/BLACUSERBOT)\n"
@@ -63,8 +62,7 @@ pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein\n\n"
 pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
 pm_caption += (
-              "█▄▄   █░░ ▄▀█ █▀▀   █▀▀ ▄▀█ █▄░█ █▀▀\n"
-              "█▄█   █▄▄ █▀█ █▄▄   █▄█ █▀█ █░▀█ █▄█\n"
+    "█▄▄   █░░ ▄▀█ █▀▀   █▀▀ ▄▀█ █▄░█ █▀▀\n" "█▄█   █▄▄ █▀█ █▄▄   █▄█ █▀█ █░▀█ █▄█\n"
 )
 
 
