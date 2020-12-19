@@ -57,7 +57,6 @@ class Config(object):
     MAX_FLOOD_IN_P_M_s = os.environ.get("MAX_FLOOD_IN_P_M_s", "3")
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID", None)
-    MAX_MESSAGE_SIZE_LIMIT = 4095
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
     CMD_HNDLR = os.environ.get("CMD_HNDLR", "\.")
@@ -76,17 +75,17 @@ class Config(object):
     SPOTIFY_BIO_PREFIX = os.environ.get("SPOTIFY_BIO_PREFIX", None)
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/KeinShin/Black-Lightning"
+        "UPSTREAM_REPO", "https://github.com/B-Lac/B-Lac-Userbot"
     )
     ALIVE_PIC = os.environ.get(
-        "ALIVE_IMAGE", "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
+        "ALIVE_IMAGE", "https://telegra.ph/file/fba9c3ccd9ad3e6444edf.jpg"
     )
     ALIVE_IMAGE = os.environ.get(
-        "ALIVE_PIC", "https://telegra.ph/file/7f72b0ea1893e84028298.mp4"
+        "ALIVE_PIC", "https://telegra.ph/file/fba9c3ccd9ad3e6444edf.jpg"
     )
     ASSISTANT_START_PIC = os.environ.get(
         "ASSISTANT_START_PIC",
-        "https://telegra.ph/file/b233f8b6332fbeb3f61dc.mp4",
+        "https://telegra.ph/file/fba9c3ccd9ad3e6444edf.jpg",
     )
     TESSDATA_PREFIX = os.environ.get(
         "TESSDATA_PREFIX", "/usr/share/tesseract-ocr/4.00/tessdata"
