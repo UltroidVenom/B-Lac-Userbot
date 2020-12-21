@@ -1,3 +1,7 @@
+# Credits TO Helbot And @@Kraken_The_BadASS
+# Plugin By @Kraken_The_BadASS
+
+
 from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
