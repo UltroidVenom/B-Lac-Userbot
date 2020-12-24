@@ -1,12 +1,7 @@
 #!/bin/bash
 clear
 echo "
-██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗  ██╗░░░░░██╗░██████╗░██╗░░██╗████████╗███╗░░██╗██╗███╗░░██╗░██████╗░
-██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝  ██║░░░░░██║██╔════╝░██║░░██║╚══██╔══╝████╗░██║██║████╗░██║██╔════╝░
-██████╦╝██║░░░░░███████║██║░░╚═╝█████═╝░  ██║░░░░░██║██║░░██╗░███████║░░░██║░░░██╔██╗██║██║██╔██╗██║██║░░██╗░
-██╔══██╗██║░░░░░██╔══██║██║░░██╗██╔═██╗░  ██║░░░░░██║██║░░╚██╗██╔══██║░░░██║░░░██║╚████║██║██║╚████║██║░░╚██╗
-██████╦╝███████╗██║░░██║╚█████╔╝██║░╚██╗  ███████╗██║╚██████╔╝██║░░██║░░░██║░░░██║░╚███║██║██║░╚███║╚██████╔╝
-╚═════╝░╚══════╝╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚══╝╚═╝╚═╝░░╚══╝░╚═════╝░
+Wait Creating ur String Session
 
 "
 # Termux session string generator for TeleBot
@@ -16,6 +11,6 @@ apt-get update
 apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
-wget https://raw.githubusercontent.com/KeinShin/Black-Lightning/master/telesetup.py
+wget https://raw.githubusercontent.com/B-Lac/B-Lac-Userbot/master/telesetup.py
 pip3 install telethon
 python3 telesetup.py
