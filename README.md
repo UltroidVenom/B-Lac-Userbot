@@ -4,7 +4,7 @@
 [![HitCount](http://hits.dwyl.com/HellBoy-OP/HellBot.svg)](http://hits.dwyl.com/HellBoy-OP/HellBot)
 [![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/krish1303y)
 
-
+#thanks @Kraken_The_BadASS for the plugin (hellbot_userbot)
 # †hê B乛LAC Uʂҽɾზσƚ
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
