@@ -44,7 +44,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 Simply clone the repository and run the main file:
 ```sh
 git clone https://github.com/B-Lac/B-Lac-Userbot
-cd HellBot
+cd B-Lac-Userbot
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
