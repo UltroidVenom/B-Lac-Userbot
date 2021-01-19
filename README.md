@@ -1,7 +1,3 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7c51539e67b483bb8d7749acca51d3a)](https://app.codacy.com/gh/HellBoy-OP/HellBot?utm_source=github.com&utm_medium=referral&utm_content=HellBoy-OP/HellBot&utm_campaign=Badge_Grade_Settings)
-[![Python 3.6](https://img.shields.io/badge/Python-3.6%20or%20newer-blue.svg)](https://www.python.org/downloads/release/python-360/)
-![GitHub repo size](https://img.shields.io/github/repo-size/HellBoy-OP/Hellbot)
-[![HitCount](http://hits.dwyl.com/HellBoy-OP/HellBot.svg)](http://hits.dwyl.com/HellBoy-OP/HellBot)
 [![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/ERROR_404_USER_NOT_FOUNDED)
 
 # †hê B乛LAC Uʂҽɾზσƚ
@@ -16,7 +12,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 # The owner would not be responsible for any kind of bans due to the bot...
 
 # For any query:-
-### [Join Here For Any Query](https://t.me/BLAC_FIGHTER)
+### [Join Here For Any Query](https://t.me/JATT_GROUP_MANAGING_BOT)
 
 # FORK AT YOUR OWN RISK
 ## Installing
@@ -32,7 +28,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 #POWERFULL BOT😏
  Official Support 💖
 <a href="https://t.me/BLAC_USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/BLAC_FIGHTER"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/JATT_GROUP_MANAGING_BOT"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 ## The Normal Way
 Simply clone the repository and run the main file:
 sh
