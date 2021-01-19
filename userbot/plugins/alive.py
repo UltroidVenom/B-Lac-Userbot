@@ -48,7 +48,7 @@ pm_caption += f"⚜️ѕυ∂σ⚜️            : `{sudou}`\n"
 
 pm_caption += "⚠️🄲🄷🄰🄽🄽🄴🄻⚠️   : [ᴊᴏɪɴ](https://t.me/BLAC_USERBOT)\n"
 
-pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/krish1303y)\n\n"
+pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/ERROR_404_USER_NOT_FOUNDED)\n\n"
 
 pm_caption += "🔥ɮ-ʟǟƈ ɢǟռɢ օառɛʀ🔥    : [Pro Here](https://t.me/JATTGAMINGYT11)\n\n"
 
