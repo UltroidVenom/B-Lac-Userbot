@@ -59,8 +59,8 @@ pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein\n\n"
 
 pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
-pm_caption += (
-    "╔══╗╔╗──╔═══╦═══╗
+pm_caption += 
+   "[╔══╗╔╗──╔═══╦═══╗
      ║╔╗║║║──║╔═╗║╔═╗║
      ║╚╝╚╣║──║║─║║║─╚╝
      ║╔═╗║║─╔╣╚═╝║║─╔╗
@@ -77,9 +77,10 @@ pm_caption += (
      ║╚╝╚╣║─║╠╝║║╚╝
      ║╔═╗║║─║║─║║
      ║╚═╝║╚═╝║─║║
-     ╚═══╩═══╝─╚╝
-"
-)
+     ╚═══╩═══╝─╚╝]
+(https://T.me/BLACUSERBOT)"
+
+
 
 
 @borg.on(admin_cmd(pattern=r"alive"))
