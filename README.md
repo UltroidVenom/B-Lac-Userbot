@@ -19,13 +19,18 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 
 # # Deploy
 
+
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot)
+
 
 # String Session
 
+
 [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@PoxsisYT/B-Lac#main.py)
 
+
 #POWERFULL BOT😏
+#B LAC TEAM
  Official Support 💖
 <a href="https://t.me/BLAC_USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/JATT_GROUP_MANAGING_BOT"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
@@ -46,21 +51,27 @@ Not All of the variables are mandatory
 
 The Userbot should work by setting only the first two variables
 
+
 python3
 from heroku_config import Var
+
 
 class Development(Var):
   APP_ID = 6
   API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
 
 
+
 Heroku Configuration
 Simply just leave the Config as it is.
+
 
 Local Configuration
 Fortunately there are no Mandatory vars for the UniBorg Support Config.
 
+
 ## Mandatory Vars
+
 
 - Only two of the environment variables are mandatory.
 - This is because of telethon.errors.rpc_error_list.ApiIdPublishedFloodError
