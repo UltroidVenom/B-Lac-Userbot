@@ -1,4 +1,4 @@
-# OWNER    @JATTGAMINGYT11
+#OWNER    https://t.me/JATTGAMINGYT11
 [![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/ERROR_404_USER_NOT_FOUNDED)
 
 # †hê B乛LAC USERBOT
