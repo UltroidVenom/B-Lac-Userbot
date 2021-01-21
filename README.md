@@ -1,3 +1,4 @@
+<br>
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/B-Lac/B-Lac-Userbot)
 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg?&style=flat-square)](https://github.com/B-Lac/B-Lac-Userbot#copyright--license)
 [![Stars](https://img.shields.io/github/stars/B-Lac/B-Lac-Userbot?&style=flat-square)](https://github.com/B-Lac/B-Lac-Userbot/stargazers)
@@ -9,9 +10,8 @@
 ![Repo Size](https://img.shields.io/github/repo-size/B-Lac/B-Lac-Userbot?style=flat-square)
 [![Sourcery](https://img.shields.io/badge/Sourcery-enabled-brightgreen?&style=flat-square)](https://sourcery.ai)
 [![CodeFactor](https://www.codefactor.io/repository/github/B-Lac/B-Lac-Userbot/badge?&style=flat-square)](https://www.codefactor.io/repository/github/B-Lac/B-Lac-Userbot)
-[![DeepSource](https://deepsource.io/gh/B-Lac/B-Lac-Userbot.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/B-Lac/B-Lac-Userbot/?ref=repository-badge)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/B-Lac/B-Lac-Userbot)
-<br
+<br>
 
 [![Contact Me](https://img.shields.io/bdge/Telegram-Contact%20Me-informational)](https://t.me/ERROR_404_USER_NOT_FOUNDED)
 
