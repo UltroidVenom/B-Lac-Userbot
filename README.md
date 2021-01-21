@@ -42,23 +42,19 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 ##   The Normal Way
    Simply clone the repository and run the main file:
 
-cd B lac
+
+# The Normal Way
+
+Simply clone the repository and run the main file:
+```sh
+git clone https://github/KienShin/Black-Lightning.git
+cd Black Lightning 
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
-#   <Create local_config.py with variables as given below>
-python3 -m userbot
-
-An example local_config.py file could be:
-
-Not All of the variables are mandatory
-
-The Userbot should work by setting only the first two variables
-
-
-python3
-from heroku_config import Var
-
+# <Create local_config.py with variables as given below>
+python3 -m Black-Lightning
+```
 
 class Development(Var):
   APP_ID = 6
