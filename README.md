@@ -41,25 +41,8 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 <ac href="https://t.me/JATT_GROUP_MANAGING_BOT"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 ##   The Normal Way
    Simply clone the repository and run the main file:
-# ╔══╗╔╗──╔═══╦═══╗
-║╔╗║║║──║╔═╗║╔═╗║
-║╚╝╚╣║──║║─║║║─╚╝
-║╔═╗║║─╔╣╚═╝║║─╔╗
-║╚═╝║╚═╝║╔═╗║╚═╝║
-╚═══╩═══╩╝─╚╩═══╝
-╔╗─╔╦═══╦═══╦═══╗
-║║─║║╔═╗║╔══╣╔═╗║
-║║─║║╚══╣╚══╣╚═╝║
-║║─║╠══╗║╔══╣╔╗╔╝
-║╚═╝║╚═╝║╚══╣║║╚╗
-╚═══╩═══╩═══╩╝╚═╝
-╔══╗╔═══╦════╗
-║╔╗║║╔═╗║╔╗╔╗║
-║╚╝╚╣║─║╠╝║║╚╝
-║╔═╗║║─║║─║║
-║╚═╝║╚═╝║─║║
-╚═══╩═══╝─╚╝
-cd HellBot
+
+cd B lac
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
