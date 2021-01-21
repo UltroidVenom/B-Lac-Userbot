@@ -17,7 +17,7 @@ import asyncio
 
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
-from userbot import CMD_HELP
+
 
 @borg.on(admin_cmd(pattern="fake ?(.*)"))
 async def _(event):
@@ -30,6 +30,7 @@ async def _(event):
         action = input_str
     async with borg.action(event.chat_id, action):
         await asyncio.sleep(86400)  # type for 10 seconds
+
 
 @borg.on(admin_cmd("gbam"))
 async def gbun(event):
@@ -79,5 +80,3 @@ async def gbun(event):
         mention = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\nReason: Not Given `"
         await event.reply(mention)
     await event.delete()
-
-
