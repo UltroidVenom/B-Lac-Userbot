@@ -1,5 +1,8 @@
-#OWNER    https://t.me/JATTGAMINGYT11
-[![Contact Me](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/ERROR_404_USER_NOT_FOUNDED)
+# OWNER    B LAC JASS
+ 2N OWNER B LAC PAWAN
+#3 B LAC ANMOL
+
+[![Contact Me](https://img.shields.io/bdge/Telegram-Contact%20Me-informational)](https://t.me/ERROR_404_USER_NOT_FOUNDED)
 
 # †hê B乛LAC USERBOT
 
