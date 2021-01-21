@@ -17,13 +17,13 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 # FORK AT YOUR OWN RISK
 ## Installing
 
-# # Deploy
+#Deploy
 
 
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot)
 
 
-# String Session
+#String Session
 
 
 [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@PoxsisYT/B-Lac#main.py)
