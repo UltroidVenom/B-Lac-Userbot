@@ -1,13 +1,6 @@
 import asyncio
-import base64
-import os
 
-from telethon import functions, types
-from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-
-from userbot import CMD_HELP
-from userbot.plugins import BOTLOG, BOTLOG_CHATID
-from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
+from userbot.utils import admin_cmd, sudo_cmd
 
 
 @bot.on(admin_cmd(pattern="spam (.*)"))
@@ -56,7 +49,7 @@ async def spammer(e):
         await asyncio.sleep(spamDelay)
 
 
-#@register(outgoing=True, pattern="^.mspam (.*)")
+# @register(outgoing=True, pattern="^.mspam (.*)")
 @bot.on(admin_cmd(pattern="mspam (.*)"))
 @bot.on(sudo_cmd(pattern="mspam (.*)", allow_sudo=True))
 async def tiny_pic_spam(e):
@@ -102,4 +95,3 @@ async def tiny_pic_spam(e):
         return await e.reply(
             f"**Error**\nUsage `!mspam <count> reply to a sticker/gif/photo/video`"
         )
-
