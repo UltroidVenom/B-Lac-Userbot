@@ -908,6 +908,12 @@ async def source(e):
             "Hello , User I Am Using [BLAC_USERBOT](https://github.com/B-Lac/B-Lac-Userbot) ! Worth A Try 😌"
         )
 
+@register(outgoing=True, pattern="^.deploy_link$")
+async def source(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await e.edit(
+            "Hello , User I Am Using [BLAC_USERBOT](https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot) ! Go and deploy now😌"
+        )
 
 @register(outgoing=True, pattern="^.str(?: |$)(.*)")
 async def stretch(stret):
