@@ -124,7 +124,7 @@
    },
    "TG_BOT_TOKEN_BF_HER": {
     "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. Get it else .help won't work.",
-    "value": "1637818217:AAE-SV67PUDZ4hbVhvdSQsLfoQNi_N4D4Lk",
+    "value": "1637818217:AAEEQq1rfQyiTr6DPrSaZEOiKAjNFq27kEM",
     "required": true
    },
    "TG_BOT_USER_NAME_BF_HER": {
