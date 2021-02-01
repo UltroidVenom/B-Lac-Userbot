@@ -24,11 +24,11 @@
     "required": false
    },
    "APP_ID": {
-    "description": "Get this value from my.telegram.org! Please do not steal",
+    "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban",
     "value": ""
    },
    "API_HASH": {
-    "description": "Get this value from my.telegram.org! Please do not steal",
+    "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban",
     "value": ""
    },
    "STRING_SESSION": {
@@ -84,7 +84,7 @@
    },  
     "ALIVE_MSG": {
       "description": "Set Custom awake Message When entering .awake command.",
-      "value": "",
+      "value": "I AM ALIVE SIR 😈",
       "required": true
     },
     "ALIVE_PHOTTO": {
@@ -124,17 +124,17 @@
    },
    "TG_BOT_TOKEN_BF_HER": {
     "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. Get it else .help won't work.",
-    "value": "",
+    "value": "1637818217:AAE-SV67PUDZ4hbVhvdSQsLfoQNi_N4D4Lk",
     "required": true
    },
    "TG_BOT_USER_NAME_BF_HER": {
     "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the username of your bot. Needed for .help to work.",
-    "value": "",
+    "value": "@BLAC_PUBLIC_BOT",
     "required": true
    },
    "ALIVE_NAME": {
     "description": "Your Telegram Username. ",
-    "value": "",
+    "value": "BLAC_USERBOT_USER",
     "required": false
    },  
    "MAX_SPAM": {
@@ -154,17 +154,17 @@
    },
    "ALIVE_PIC": {
     "description": "telegra.ph link to theimage you want as alive pic, leave blank for sticker",
-    "value": "",
+    "value": "https://telegra.ph/file/76daded01da7289d0bd4d.jpg",
     "required": false
    },
    "PMPERMIT_PIC": {
    "description": "telegra.ph link to theimage you want as pmpermit pic, leave blank for default one!",
-   "value": "",
+   "value": "https://telegra.ph/file/76daded01da7289d0bd4d.jpg",
    "required": false
    },
    "TZ": {
     "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-    "value": "",
+    "value": "kolkata",
     "required": false
    }
   },
