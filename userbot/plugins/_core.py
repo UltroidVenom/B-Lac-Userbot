@@ -88,6 +88,20 @@ async def unload(event):
         )
 
 
+@borg.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)$"))
+async def unload(event):
+    if event.fwd_from:
+        return
+    shortname = event.pattern_match["shortname"]
+    try:
+        remove_plugin(shortname)
+        await event.edit(f"Successfully uninstall {shortname}")
+    except Exception as e:
+        await event.edit(
+            "Successfully uninstall {shortname}\n{}".format(shortname, str(e))
+        )
+
+
 @borg.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
 async def load(event):
     if event.fwd_from:
