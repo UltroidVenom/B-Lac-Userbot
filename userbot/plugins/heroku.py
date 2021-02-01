@@ -191,7 +191,7 @@ async def _(dyno):
         .json()
         .get("result")
         .get("key")
-     )
+    )
     blac_url = f"⚡ Pasted this logs.txt to [NekoBin](https://nekobin.com/{blac_key}) ⚡"
     await dyno.edit("Getting Logs....")
     with open("logs.txt", "w") as log:
@@ -201,7 +201,7 @@ async def _(dyno):
         dyno.chat_id,
         "logs.txt",
         reply_to=dyno.id,
-        caption=blac_url,   
+        caption=blac_url,
     )
 
     await asyncio.sleep(5)
