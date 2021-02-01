@@ -185,6 +185,14 @@ async def _(dyno):
         return await dyno.reply(
             " Please make sure your Heroku API Key, Your App name are configured correctly in the heroku"
         )
+    blac_data = app.get_log()
+    blac_key = (
+        requests.post("https://nekobin.com/api/documents", json={"content": blac_data})
+        .json()
+        .get("result")
+        .get("key")
+     )
+    blac_url = f"⚡ Pasted this logs.txt to [NekoBin](https://nekobin.com/{blac_key}) ⚡"
     await dyno.edit("Getting Logs....")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
@@ -193,7 +201,7 @@ async def _(dyno):
         dyno.chat_id,
         "logs.txt",
         reply_to=dyno.id,
-        caption="ɓ乛ℓα૮ µรε૨ɓσƭ logs of 100+ lines",
+        caption=blac_url,   
     )
 
     await asyncio.sleep(5)
