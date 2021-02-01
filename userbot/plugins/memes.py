@@ -909,7 +909,7 @@ async def source(e):
         )
 
 
-@register(outgoing=True, pattern="^.deploy_link$")
+@register(outgoing=True, pattern="^.deploy$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit(
