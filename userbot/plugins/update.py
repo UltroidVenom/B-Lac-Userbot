@@ -5,7 +5,6 @@ from os import environ, execle, path, remove
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 
-from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 from var import Var
 
@@ -75,8 +74,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n"
-                "**Invalid Heroku credentials for updating Hêllẞøt.**"
+                f"{txt}\n" "**Invalid Heroku credentials for updating Hêllẞøt.**"
             )
             return repo.__del__()
         ups_rem.fetch(ac_br)
@@ -202,5 +200,3 @@ async def upstream(event):
         await event.edit("**Perfoming a quick update, please wait...**")
         await update(event, repo, ups_rem, ac_br)
     return
-
-
