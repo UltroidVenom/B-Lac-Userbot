@@ -48,7 +48,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 #   POWERFULL BOT😏
 #   B LAC TEAM
  Official Support 💖
-<a     href="https://t.me/BLAC _USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a     href="https://t.me/BLAC_USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 <ac href="https://t.me/JATT_GROUP_MANAGING_BOT"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 ##   The Normal Way
    Simply clone the repository and run the main file:
