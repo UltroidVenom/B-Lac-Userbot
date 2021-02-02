@@ -1,4 +1,3 @@
-
 from telethon import *
 
 from userbot import CMD_HELP
@@ -26,7 +25,7 @@ async def _(dc):
         await borg.send_message(chat_id, masg)
         await dc.edit("⚜️Message Delivered! Sir⚜️")
     for i in c[1:]:
-        msg += i + " " 
+        msg += i + " "
     if msg == "":  # hoho
         return
     try:
