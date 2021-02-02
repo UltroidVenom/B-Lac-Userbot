@@ -74,7 +74,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f"{txt}\n" "**Invalid Heroku credentials for updating Hêllẞøt.**"
+                f"{txt}\n" "**Invalid Heroku credentials for updating Blac_userẞøt.**"
             )
             return repo.__del__()
         ups_rem.fetch(ac_br)
