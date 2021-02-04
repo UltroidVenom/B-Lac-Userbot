@@ -117,7 +117,7 @@ async def gben(userbot):
     )
 
 
-@borg.on(admin_cmd(pattern="ungben ?(.*)"))
+@borg.on(admin_cmd(pattern="ungban ?(.*)"))
 async def gunben(userbot):
     dc = userbot
     sender = await dc.get_sender()
