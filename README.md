@@ -9,8 +9,6 @@
 [![PR Closed](https://img.shields.io/github/issues-pr-closed/B-Lac/B-Lac-Userbot?&style=flat-square)](https://github.com/B-Lac/B-Lac-Userbot/pulls?q=is:closed)
 ![Repo Size](https://img.shields.io/github/repo-size/B-Lac/B-Lac-Userbot?style=flat-square)
 [![Sourcery](https://img.shields.io/badge/Sourcery-enabled-brightgreen?&style=flat-square)](https://sourcery.ai)
-[![CodeFactor](https://www.codefactor.io/repository/github/B-Lac/B-Lac-Userbot/badge?&style=flat-square)](https://www.codefactor.io/repository/github/B-Lac/B-Lac-Userbot)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/B-Lac/B-Lac-Userbot)
 
 
 [![Contact Me](https://img.shields.io/bdge/Telegram-Contact%20Me-informational)](https://t.me/ERROR_404_USER_NOT_FOUNDED)
