@@ -103,8 +103,8 @@
     "required": false
    },
    "PLUGIN_CHANNEL": {
-    "description": "Channel Where You Save Your Plugins",
-    "value": "",
+    "description": "Channel Where Plugins are saved",
+    "value": "-1001181795599",
     "required": true 
    },
    "SUDO_USERS": {
