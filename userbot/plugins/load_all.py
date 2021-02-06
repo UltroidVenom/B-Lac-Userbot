@@ -9,40 +9,38 @@ from telethon.tl.types import InputMessagesFilterDocument
 from ..utils import admin_cmd, load_module
 
 
-@borg.on(admin_cmd(pattern=r"installall$"))
+@borg.on(admin_cmd("installall (.*)"))
 async def install(event):
     if event.fwd_from:
         return
-    documentss = await event.client.get_messages(
-        event.chat_id, None, search=".py", filter=InputMessagesFilterDocument
+    chat = event.pattern_match.group(1)
+    await event.edit(
+        f"Starting To Install Plugins From {chat} ! Check PRIVATE GROUP for More Info !"
     )
+    documentss = await borg.get_messages(chat, None, filter=InputMessagesFilterDocument)
     total = int(documentss.total)
     total_doxx = range(0, total)
-    b = await event.client.send_message(
-        event.chat_id,
-        f"**Installing {total} plugins...**\n`This msg will be deleted after the installation gets completed`",
-    )
-    text = "**Installing...**\n\n"
-    a = await event.client.send_message(event.chat_id, text)
-    if total == 0:
-        await a.edit("**No plugins..what am I supposed to install.**")
-        await event.delete()
-        return
     for ixo in total_doxx:
         mxo = documentss[ixo].id
         downloaded_file_name = await event.client.download_media(
-            await event.client.get_messages(event.chat_id, ids=mxo), "userbot/plugins/"
+            await borg.get_messages(chat, ids=mxo), "userbot/plugins/"
         )
         if "(" not in downloaded_file_name:
             path1 = Path(downloaded_file_name)
             shortname = path1.stem
-            try:
-                load_module(shortname.replace(".py", ""))
-                text += f"**• Installed all** `{(os.path.basename(downloaded_file_name))}` **successfully.**\n"
-            except:
-                text += f"**• Error, can't Install🚶🏻🚶🏻** `{(os.path.basename(downloaded_file_name))}`\n"
+            load_module(shortname.replace(".py", ""))
+            sed = f"Installing Plugins From {chat}"
+            logger.info(sed)
+            await borg.send_message(
+                event.chat_id,
+                "Installed Plugin `{}` successfully.".format(
+                    os.path.basename(downloaded_file_name)
+                ),
+            )
         else:
-            text += f"**🚀 Plugin** `{(os.path.basename(downloaded_file_name))}` **already installed.**\n"
-        await a.edit(f"{text}\n**Installed every plugin from the given chat.**")
-        await event.delete()
-        await b.delete()
+            await borg.send_message(
+                event.chat_id,
+                "Plugin `{}` has been pre-installed and cannot be installed.".format(
+                    os.path.basename(downloaded_file_name)
+                ),
+            )
