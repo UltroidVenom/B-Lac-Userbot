@@ -40,7 +40,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 #   String Session
 
 
-[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@PoxsisYT/B-Lac#main.py)
+[![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@pawanjatt/B-Lacuserbot#main.py)
 
 
 #   POWERFULL BOT😏
