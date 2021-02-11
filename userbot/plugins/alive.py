@@ -1,6 +1,7 @@
 # Thanks to Sipak bro and Aryan..
 # animation Idea by @(Sipakisking) && @Hell boy_pikachu
 # Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
+# modified by Pawan jatt
 # Kang with credits else gay...
 import asyncio
 import os
@@ -16,7 +17,7 @@ from userbot.utils import admin_cmd, sudo_cmd
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else " B乛LAC Uʂҽɾზσƚ"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
-hellversion = "12.3"
+Blacversion = "12.3"
 ludosudo = Config.SUDO_USERS
 
 if ludosudo:
@@ -24,7 +25,7 @@ if ludosudo:
 else:
     sudou = "False"
 
-kraken = bot.uid
+Jatt = bot.uid
 # Thanks to Sipak bro and Raganork..
 # animation Idea by @NOOB_GUY_OP (Sipakisking)
 # Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
@@ -37,48 +38,25 @@ edit_time = 5
 file1 = "https://telegra.ph/file/74cd131c1cc3aa962f9a9.mp4"
 
 """ =======================CONSTANTS====================== """
-pm_caption = "**B乛LAC Uʂҽɾზσƚ 𝙸𝚂 🅾🅽🅻🅸🅽🅴**\n\n"
+pm_caption = "**𝔹𝕃𝔸ℂ 𝕌𝕊𝔼ℝ𝔹𝕆𝕋 𝕀𝕊 𝕆ℕ𝕃𝕀ℕ𝔼**\n\n"
 
-pm_caption += f"😈B乛LAC Uʂҽɾზσƚ😈       : __**{hellversion}**__\n"
+pm_caption += f"😈𝔹𝕃𝔸ℂ 𝕌𝕊𝔼ℝ𝔹𝕆𝕋😈       : __**{Blacversion}**__\n"
 
-pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
+pm_caption += "🛡️𝕋𝔼𝕃𝔼𝕋ℍ𝕆ℕ🛡️ : `1.15.0` \n"
 
+pm_caption += f"⚜️𝕊𝕌𝔻𝕆⚜️            : `{sudou}`\n"
 
-pm_caption += f"⚜️ѕυ∂σ⚜️            : `{sudou}`\n"
+pm_caption += "⚠️ℂℍ𝔸ℕℕ𝔼𝕃⚠️   : [𝕁𝕆𝕀ℕ](https://t.me/BLAC_USERBOT)\n"
 
-pm_caption += "⚠️🄲🄷🄰🄽🄽🄴🄻⚠️   : [ᴊᴏɪɴ](https://t.me/BLAC_USERBOT)\n"
+pm_caption += "🔥ℂℝ𝔼𝔸𝕋𝕆ℝ🔥    : [ℕ𝕆𝕆𝔹 ℍ𝔼ℝ𝔼](https://t.me/ERROR_404_USER_NOT_FOUNDED)\n\n"
 
-pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/ERROR_404_USER_NOT_FOUNDED)\n\n"
+pm_caption += "🔥𝔹𝕃𝔸ℂ 𝔾𝔸ℕ𝔾 𝕆𝕎ℕ𝔼ℝ🔥    : [𝕁𝔸𝕊𝕊𝔸 𝕁𝔸𝕋𝕋](https://t.me/JATTGAMINGYT11)\n\n"
 
-pm_caption += "🔥ɮ-ʟǟƈ ɢǟռɢ օառɛʀ🔥    : [Pro Here](https://t.me/JATTGAMINGYT11)\n\n"
+pm_caption += "    [✨ℝ𝔼ℙ𝕆✨](https://github.com/B-Lac/B-Lac-Userbot) 🔹 [📜𝕃𝕀ℂ𝔼ℕ𝕊𝔼📜](https://github.com/B-Lac/B-Lac-Userbot/blob/master/LICENSE)\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/B-Lac/B-Lac-Userbot) 🔹 [📜License📜](https://github.com/B-Lac/B-Lac-Userbot/blob/master/LICENSE)\n"
+pm_caption += f"➾ **𝕄𝕐 𝕄𝔸𝕊𝕋𝔼ℝ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
-pm_caption += "➾ **Maa Chudao BhosdiWalo Ana Mat DM Mein\n\n"
-
-
-pm_caption += f"➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
-
-pm_caption += (
-    "╔══╗╔╗──╔═══╦═══╗\n"
-    "║╔╗║║║──║╔═╗║╔═╗║\n"
-    "║╚╝╚╣║──║║─║║║─╚╝\n"
-    "║╔═╗║║─╔╣╚═╝║║─╔╗\n"
-    "║╚═╝║╚═╝║╔═╗║╚═╝║\n"
-    "╚═══╩═══╩╝─╚╩═══╝\n"
-    "╔╗─╔╦═══╦═══╦═══╗\n"
-    "║║─║║╔═╗║╔══╣╔═╗║\n"
-    "║║─║║╚══╣╚══╣╚═╝║\n"
-    "║║─║╠══╗║╔══╣╔╗╔╝\n"
-    "║╚═╝║╚═╝║╚══╣║║╚╗\n"
-    "╚═══╩═══╩═══╩╝╚═╝\n"
-    "╔══╗╔═══╦════╗\n"
-    "║╔╗║║╔═╗║╔╗╔╗║\n"
-    "║╚╝╚╣║─║╠╝║║╚╝\n"
-    "║╔═╗║║─║║─║║\n"
-    "║╚═╝║╚═╝║─║║\n"
-    "╚═══╩═══╝─╚╝\n"
-)
+pm_caption += "[╔══╦╗╔══╦═╗╔══╦═╦══╗\n║╔╗║║║╔╗║╔╝║╔╗║║╠╗╔╝\n║╔╗║╚╣╠╣║╚╗║╔╗║║║║║\n╚══╩═╩╝╚╩═╝╚══╩═╝╚╝](https://t.me/BLAC_USERBOT)"
 
 
 @borg.on(admin_cmd(pattern=r"alive"))
@@ -156,13 +134,13 @@ async def amireallyalive(alive):
         pm_caption += "𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽          : 3.9.0\n"
         pm_caption += "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻         : [ᴊᴏɪɴ](https://t.me/BLAC_USERBOT)\n"
         pm_caption += (
-            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿           : [ᴊᴏɪɴ](https://t.me/JATT_GROUP_MANAGING_BOT)\n"
+            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿           : [ᴊᴏɪɴ](https://t.me/BLAC_USERBOT_GROUP)\n"
         )
-        pm_caption += "𝘓𝘐𝘚𝘌𝘕𝘊𝘌                  : [AGPL-3.0  ʟɪᴄᴇɴꜱᴇ](https://jenaatul8.wixsite.com/hellboi-atul)\n"
+        pm_caption += "𝘓𝘐𝘚𝘌𝘕𝘊𝘌                  : [AGPL-3.0  ʟɪᴄᴇɴꜱᴇ](https://github.com/B-Lac/B-Lac-Userbot/blob/master/License)\n"
         pm_caption += (
             "𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔            : [  B乛LAC Uʂҽɾზσƚ ](https://t.me/BLAC_USERBOT)\n"
         )
-        pm_caption += "[┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/BLACUSERBOT)"
+        pm_caption += "[┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/BLAC_USERBOT)"
         await alive.get_chat()
         await alive.delete()
         """ For .allive command, check if the bot is running.  """
@@ -188,10 +166,10 @@ async def amireallyalive(alive):
             "𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽        : 1.17.5\n"
             "𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽          : 3.9.0\n"
             "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻         : [ᴊᴏɪɴ](https://t.me/BLAC_USERBOT)\n"
-            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿           : [ᴊᴏɪɴ](https://t.me/JATT_GROUP_MANAGING_BOT)\n"
-            "𝘓𝘐𝘚𝘌𝘕𝘊𝘌                  : [AGPL-3.0  ʟɪᴄᴇɴꜱᴇ](https://jenaatul8.wixsite.com/hellboi-atul)\n"
+            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿           : [ᴊᴏɪɴ](https://t.me/BLAC_USERBOT_GROUP)\n"
+            "𝘓𝘐𝘚𝘌𝘕𝘊𝘌                  : [AGPL-3.0  ʟɪᴄᴇɴꜱᴇ](https://github.com/B-Lac/B-Lac-Userbot/blob/master/License)\n"
             "𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔            : [  B乛LAC Uʂҽɾზσƚ ](https://t.me/BLAC_USERBOT)\n"
-            "[ ┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/BLACUSERBOT)",
+            "[ ┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/BLAC_USERBOT)",
             link_preview=False,
         )
         await alive.delete()
