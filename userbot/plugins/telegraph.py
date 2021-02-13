@@ -1,4 +1,4 @@
-"""@telegraph Utilities Fix by @hellboi_atul
+"""@telegraph Utilities Fix by @I_AM_PAWANBIR
 Available Commands:
 .telegraph media as reply to a media
 .telegraph text as reply to a large text"""
@@ -20,15 +20,15 @@ auth_url = r["auth_url"]
 async def _(event):
     if event.fwd_from:
         return
-    if Var.PLUGIN_CHANNEL is None:
+    if Var.PRIVATE_GROUP_ID is None:
         await event.edit(
-            "Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work"
+            "Please set the required environment variable `PRIVATE_GROUP_ID` for this plugin to work"
         )
         return
     if not os.path.isdir(Var.TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Var.TEMP_DOWNLOAD_DIRECTORY)
     await borg.send_message(
-        Var.PLUGIN_CHANNEL,
+        Var.PRIVATE_GROUP_ID,
         "Created New Telegraph account {} for the current session. \n**Do not give this url to anyone, even if they say they are from Telegram!**".format(
             auth_url
         ),
