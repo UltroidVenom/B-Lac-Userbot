@@ -17,7 +17,7 @@ from userbot.utils import admin_cmd, sudo_cmd
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else " B乛LAC Uʂҽɾზσƚ"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
-Blacversion = "12.3"
+Blacversion = "1.5"
 ludosudo = Config.SUDO_USERS
 
 if ludosudo:
