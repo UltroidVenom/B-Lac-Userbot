@@ -1,8 +1,8 @@
-import time
 import functools
 import inspect
 import logging
 import re
+import time
 from pathlib import Path
 
 from telethon import events
