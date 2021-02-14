@@ -83,7 +83,7 @@ async def gben(userbot):
     except:
         return await dark.edit(f"**Something W3NT Wrong 🤔**")
     if user:
-        if user.id == 1311769691:
+        if user.id == 1482443377:
             return await dark.edit(f"**You nub nibba..I can't gban my creator..**")
         try:
             from userbot.plugins.sql_helper.gmute_sql import gmute
