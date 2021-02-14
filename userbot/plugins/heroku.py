@@ -192,7 +192,7 @@ async def _(dyno):
         .get("result")
         .get("key")
     )
-    blac_url = f"⚡ Pasted this logs.txt to [NekoBin](https://nekobin.com/{blac_key}) ⚡"
+    blac_url = f"⚡ Pasted this logs.txt to [NekoBin](https://nekobin.com/{blac_key}) && [RAW PAGE](https://nekobin.com/raw/{blac_key}) ⚡"
     await dyno.edit("Getting Logs....")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
