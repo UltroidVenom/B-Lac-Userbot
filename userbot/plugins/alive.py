@@ -42,7 +42,7 @@ pm_caption = "**𝔹𝕃𝔸ℂ 𝕌𝕊𝔼ℝ𝔹𝕆𝕋 𝕀𝕊 𝕆ℕ𝕃
 
 pm_caption += f"😈𝔹𝕃𝔸ℂ 𝕌𝕊𝔼ℝ𝔹𝕆𝕋😈       : __**{Blacversion}**__\n"
 
-pm_caption += "🛡️𝕋𝔼𝕃𝔼𝕋ℍ𝕆ℕ🛡️ : `1.15.0` \n"
+pm_caption += "🛡️𝕋𝔼𝕃𝔼𝕋ℍ𝕆ℕ🛡️ : `1.19.0` \n"
 
 pm_caption += f"⚜️𝕊𝕌𝔻𝕆⚜️            : `{sudou}`\n"
 
