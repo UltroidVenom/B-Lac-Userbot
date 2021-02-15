@@ -3,9 +3,6 @@ Syntax: `.img <Name>` or `.img (replied message)`
 \n Upgraded and Google Image Error Fixed
 """
 
-import json
-import os
-import time
 import os
 import shutil
 from re import findall
