@@ -26,7 +26,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 # The owner would not be responsible for any kind of bans due to the bot...
 
 # For any query:-
-### [Join Here For Any Query](https://t.me/JATT_GROUP_MANAGING_BOT)
+[Join Here For Any Query](https://t.me/BLAC_USERBOT_GROUP)
 
 ##   FORK AT YOUR OWN RISK AND DON'T FORGET TO GIVE CREDIT OTHERWISE YOUR MOM IS BITCH🤪🤪🤪
 
@@ -46,7 +46,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 #   B LAC TEAM
  Official Support 💖
 <a     href="https://t.me/BLAC_USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
-<ac href="https://t.me/JATT_GROUP_MANAGING_BOT"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<ac href="https://t.me/BLAC_USERBOT_GROUP"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 ##   The Normal Way
    Simply clone the repository and run the main file:
 
