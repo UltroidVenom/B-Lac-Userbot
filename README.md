@@ -42,7 +42,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://repl.it/@pawanjatt/B-Lacuserbot#main.py)
 
 
-#   POWERFULL BOT😏
+#   POWERFULL BOT HATERS APNI GANND MARVAO😏
 #   B LAC TEAM
  Official Support 💖
 <a     href="https://t.me/BLAC_USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
