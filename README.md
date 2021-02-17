@@ -28,8 +28,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 # For any query:-
 ### [Join Here For Any Query](https://t.me/JATT_GROUP_MANAGING_BOT)
 
-#   FORK AT YOUR OWN RISK
-##  Installing
+##   FORK AT YOUR OWN RISK AND DON'T FORGET TO GIVE CREDIT OTHERWISE YOUR MOM IS BITCH🤪🤪🤪
 
 #    Deploy
 
