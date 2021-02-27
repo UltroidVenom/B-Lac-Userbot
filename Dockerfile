@@ -1,6 +1,4 @@
-FROM kalilinux/kali-rolling
-ARG DEBIAN_FRONTEND=noninteractive
-ENV TERM xterm-256color
+FROM python:3.9.2-slim-buster
 RUN apt-get update && apt upgrade -y && apt-get install sudo -y
 
 
