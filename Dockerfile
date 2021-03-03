@@ -1,51 +1,56 @@
-FROM python:3.9.2-slim-buster
-RUN apt-get update && apt upgrade -y && apt-get install sudo -y
-
-
+FROM kalilinux/kali-rolling
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt upgrade -y && apt-get install sudo -y && apt-get install apt-utils -y
+RUN touch ~/.hushlogin
 RUN apt-get install -y\
     coreutils \
     bash \
+    nodejs \
     bzip2 \
     curl \
-    tesseract-ocr \
-    tesseract-ocr-eng \
-    imagemagick \
     figlet \
     gcc \
     g++ \
     git \
+    util-linux \
     libevent-dev \
     libjpeg-dev \
     libffi-dev \
     libpq-dev \
-    libsqlite3-dev \
     libwebp-dev \
-    libgl1 \
+    libxml2 \
+    libxml2-dev \
+    libxslt-dev \
     musl \
     neofetch \
     libcurl4-openssl-dev \
     postgresql \
     postgresql-client \
     postgresql-server-dev-all \
+    #chromedriver \
     openssl \
-    mediainfo \
+    pv \
+    jq \
     wget \
     python3 \
     python3-dev \
     python3-pip \
     libreadline-dev \
+    apktool \
     zipalign \
     sqlite3 \
     ffmpeg \
+    imagemagick \
     libsqlite3-dev \
-    #axel \
+    chromium\
     zlib1g-dev \
     recoverjpeg \
     zip \
     megatools \
-    libfreetype6-dev \
+    #axel \
     #procps \
-    policykit-1
+    policykit-1\
+    libfreetype6-dev
 
 
 RUN apt-get autoremove --purge
