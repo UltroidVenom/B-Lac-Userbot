@@ -38,13 +38,13 @@ RUN apt-get install -y\
     sqlite3 \
     ffmpeg \
     libsqlite3-dev \
-    axel \
+    #axel \
     zlib1g-dev \
     recoverjpeg \
     zip \
     megatools \
     libfreetype6-dev \
-    procps \
+    #procps \
     policykit-1
 
 
