@@ -12,6 +12,9 @@ RUN apt-get install -y\
     gcc \
     g++ \
     git \
+    tesseract-ocr \
+    tesseract-ocr-eng \
+    imagemagick \
     util-linux \
     libevent-dev \
     libjpeg-dev \
