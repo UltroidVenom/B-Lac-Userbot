@@ -56,7 +56,7 @@ pm_caption += "    [✨ℝ𝔼ℙ𝕆✨](https://github.com/B-Lac/B-Lac-Userbot
 
 pm_caption += f"➾ **𝕄𝕐 𝕄𝔸𝕊𝕋𝔼ℝ** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
-pm_caption += "[╔══╦╗╔══╦═╗╔══╦═╦══╗\n║╔╗║║║╔╗║╔╝║╔╗║║╠╗╔╝\n║╔╗║╚╣╠╣║╚╗║╔╗║║║║║\n╚══╩═╩╝╚╩═╝╚══╩═╝╚╝](https://t.me/BLAC_USERBOT)"
+pm_caption += "[╔══╦╗╔══╦═╗\n║╔╗║║║╔╗║╔╝\n║╔╗║╚╣╠╣║╚╗\n╚══╩═╩╝╚╩═╝](https://t.me/BLAC_USERBOT)"
 
 
 @borg.on(admin_cmd(pattern=r"alive"))
