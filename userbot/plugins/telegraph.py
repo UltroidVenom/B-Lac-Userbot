@@ -104,6 +104,7 @@ def resize_image(image):
     im = Image.open(image)
     im.save(image, "PNG")
 
+
 @borg.on(admin_cmd("tg (m|t) ?(.*)"))
 async def _(event):
     if event.fwd_from:
