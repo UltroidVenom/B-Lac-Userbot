@@ -19,7 +19,7 @@
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
 This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERROR_404_USER_NOT_FOUNDED) Also join support channel and group Enjoy Your Bot!!💝
-[![B乛LAC Uʂҽɾზσƚ](https://telegra.ph/file/946aa5614cf6d361fc4eb.jpg)](https://t.me/BLAC_USERBOT_SUPPORT)
+[![B乛LAC Uʂҽɾზσƚ](https://telegra.ph/file/7540e73ba597f425b3da8.jpg)](https://t.me/BLAC_USERBOT_SUPPORT)
 
 # The owner would not be responsible for any kind of bans due to the bot...
 
