@@ -22,7 +22,7 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 [![B乛LAC Uʂҽɾზσƚ](https://telegra.ph/file/7540e73ba597f425b3da8.jpg)](https://t.me/BLAC_USERBOT_SUPPORT)
 
 # The owner would not be responsible for any kind of bans due to the bot...
-#JATT --https://telegra.ph/file/127b5976c19cb5d05288d.jpg
+
 # For any query:-
 [Join Here For Any Query](https://t.me/BLAC_USERBOT_GROUP)
 
