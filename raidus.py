@@ -140,3 +140,4 @@ async def d3vilraid(event):
         await raider.send_message(kek, "TU CHUTIYA TERA KHANDAAN CHUTIYA")
         await raider.send_message(kek, "AUR KITNA BOLU BEY MANN BHAR GAYA MERA🤣")
         await raider.send_message(kek, "Ab nikal ja jaake chkko k saath hilaa")
+BHEN KE LOVDA B LAC SE PANGA NI
