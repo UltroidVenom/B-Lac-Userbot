@@ -2,13 +2,14 @@
 # Kangers keep credits
 # By @Surv_ivor
 
+import asyncio
 import os
 
 from telethon.errors import ChatAdminRequiredError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.users import GetFullUserRequest
 
-from ..utils import admin_cmd , sudo_cmd
+from ..utils import admin_cmd, sudo_cmd
 from . import ALIVE_NAME
 
 naam = str(ALIVE_NAME)
@@ -281,13 +282,10 @@ async def _(event):
     await event.delete()
 
 
-import asyncio
-
 #  (c)2020 Telebot
 #
 # You may not use this plugin without proper authorship and consent from @TelebotSupport
 #
-import os
 
 FBAN_GROUP_ID = os.environ.get("FBAN_GROUP_ID", None)
 if FBAN_GROUP_ID:
@@ -295,6 +293,8 @@ if FBAN_GROUP_ID:
 EXCLUDE_FED = os.environ.get("EXCLUDE_FED", None)
 
 # By @HeisenbergTheDanger, @its_xditya
+
+
 @bot.on(admin_cmd("superfban ?(.*)"))
 @bot.on(sudo_cmd("superfban ?(.*)", allow_sudo=True))
 async def _(event):
@@ -314,7 +314,7 @@ async def _(event):
             for line in lines:
                 try:
                     fedList.append(line[:36])
-                except:
+                except BaseException:
                     pass
             arg = event.text.split(" ", maxsplit=2)
             if len(arg) > 2:
@@ -341,7 +341,7 @@ async def _(event):
         if int(FBAN) == 1118936839 or int(FBAN) == 630654925 or int(FBAN) == 719195224:
             await event.edit("Something went wrong.")
             return
-    except:
+    except BaseException:
         if (
             FBAN == "@Surv_ivor"
             or FBAN == "@Sur_ivor"
@@ -378,7 +378,7 @@ async def _(event):
                         for line in lines:
                             try:
                                 fedList.append(line[:36])
-                            except:
+                            except BaseException:
                                 pass
                     else:
                         return
@@ -410,7 +410,7 @@ async def _(event):
     await event.edit(f"Fbaning in {len(fedList)} feds.")
     try:
         await event.client.send_message(chat, f"/start")
-    except:
+    except BaseException:
         await event.edit("FBAN_GROUP_ID is incorrect.")
         return
     await asyncio.sleep(3)
@@ -494,7 +494,7 @@ async def _(event):
     await event.edit(f"UnFbaning in {len(fedList)} feds.")
     try:
         await event.client.send_message(chat, f"/start")
-    except:
+    except BaseException:
         await event.edit("FBAN_GROUP_ID is incorrect.")
         return
     await asyncio.sleep(3)
