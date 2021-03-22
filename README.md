@@ -41,8 +41,9 @@ This is the one and only official B Lac Userbot made by [JATT](https://t.me/ERRO
 
 
 #   POWERFULL BOT HATERS APNI GANND MARVAO😏
-#   B LAC TEAM
- Official Support 💖
+#   𖣘 [ B乛LAC OFFICIALS] 𖣘
+
+
 <a     href="https://t.me/BLAC_USERBOT"><img src="https://img.shields.io/badge/Join-Support%20Channel-red.svg?style=for-the-badge&logo=Telegram"></a>
 <ac href="https://t.me/BLAC_USERBOT_GROUP"><img src="https://img.shields.io/badge/Join-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 ##   The Normal Way
