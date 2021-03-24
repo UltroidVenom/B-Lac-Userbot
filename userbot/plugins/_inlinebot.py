@@ -121,47 +121,6 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                     [custom.Button.inline("What is this ❓", data="pmclick")],
                 ],
             )
-        elif event.query.user_id == bot.uid and query == "repo":
-            result = builder.article(
-                title="Repository",
-                text=f" B乛LAC Uʂҽɾზσƚ - Telegram Userbot.",
-                buttons=[
-                    [
-                        Button.url("Repo", "https://github.com/B-Lac/B-Lac-Userbot"),
-                        Button.url(
-                            "Deploy",
-                            "https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot",
-                        ),
-                    ],
-                    [Button.url("Support", "https://t.me/BLACUSERBOT")],
-                ],
-            )
-        else:
-            result = builder.article(
-                "Source Code",
-                text="**Welcome to  B乛LAC Uʂҽɾზσƚ**\n\n`Click below buttons for more`",
-                buttons=[
-                    [custom.Button.url("Creator👨‍🦱", "https://t.me/krish1303y")],
-                    [
-                        custom.Button.url(
-                            "👨‍💻Source Code‍💻",
-                            "https://github.com/B-Lac/B-Lac-Userbot",
-                        ),
-                        custom.Button.url(
-                            "Deploy 🌀",
-                            "https://heroku.com/deploy?template=https://github.com/B-Lac/B-Lac-Userbot",
-                        ),
-                    ],
-                    [
-                        custom.Button.url(
-                            "Updates and Support Group↗️",
-                            "https://t.me/BLACUSERBOT",
-                        )
-                    ],
-                ],
-                link_preview=False,
-            )
-        await event.answer([result] if result else None)
 
     @tgbot.on(
         events.callbackquery.CallbackQuery(  # pylint:disable=E0602
