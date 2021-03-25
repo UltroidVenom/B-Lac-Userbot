@@ -2,7 +2,6 @@ import functools
 import inspect
 import logging
 import re
-import time
 from pathlib import Path
 
 from telethon import events
@@ -79,6 +78,77 @@ def command(**args):
             try:
                 LOAD_PLUG[file_test].append(func)
             except:
+                LOAD_PLUG.update({file_test: [func]})
+            return func
+
+        return decorator
+
+def lightning_command(**args):
+    args["func"] = lambda e: e.via_bot_id is None
+
+    stack = inspect.stack()
+    previous_stack_frame = stack[1]
+    file_test = Path(previous_stack_frame.filename)
+    file_test = file_test.stem.replace(".py", "")
+    if 1 == 0:
+        return print("stupidity at its best")
+    else:
+        pattern = args.get("pattern", None)
+        allow_sudo = args.get("allow_sudo", None)
+        allow_edited_updates = args.get('allow_edited_updates', False)
+        args["incoming"] = args.get("incoming", False)
+        args["outgoing"] = True
+        if bool(args["incoming"]):
+            args["outgoing"] = False
+
+        try:
+            if pattern is not None and not pattern.startswith('(?i)'):
+                args['pattern'] = '(?i)' + pattern
+        except BaseException:
+            pass
+
+        reg = re.compile('(.*)')
+        if pattern is not None:
+            try:
+                cmd = re.search(reg, pattern)
+                try:
+                    cmd = cmd.group(1).replace(
+                        "$",
+                        "").replace(
+                        "\\",
+                        "").replace(
+                        "^",
+                        "")
+                except BaseException:
+                    pass
+
+                try:
+                    CMD_LIST[file_test].append(cmd)
+                except BaseException:
+                    CMD_LIST.update({file_test: [cmd]})
+            except BaseException:
+                pass
+
+        if allow_sudo:
+            args["from_users"] = list(Var.SUDO_USERS)
+            # Mutually exclusive with outgoing (can only set one of either).
+            args["incoming"] = True
+        del allow_sudo
+        try:
+            del args["allow_sudo"]
+        except BaseException:
+            pass
+
+        if "allow_edited_updates" in args:
+            del args['allow_edited_updates']
+
+        def decorator(func):
+            if allow_edited_updates:
+                bot.add_event_handler(func, events.MessageEdited(**args))
+            bot.add_event_handler(func, events.NewMessage(**args))
+            try:
+                LOAD_PLUG[file_test].append(func)
+            except BaseException:
                 LOAD_PLUG.update({file_test: [func]})
             return func
 
@@ -290,7 +360,7 @@ def errors_handler(func):
 
             text = "**USERBOT CRASH REPORT**\n\n"
 
-            link = "[Here](https://t.me/lightningsupport)"
+            link = "[Here](https://t.me/BLAC_USERBOT_GROUP)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
@@ -301,7 +371,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN Lightning USERBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN BLAC USERBOT TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
@@ -633,8 +703,8 @@ def start_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Initialising Lightning.")
-        print("B-Lac - Imported " + shortname)
+        sedprint.info("Starting Your Assistant Bot.")
+        sedprint.info("Assistant Sucessfully imported " + shortname)
     else:
         import importlib
         import sys
@@ -645,9 +715,22 @@ def start_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
+        mod.serena = bot.tgbot
+        mod.assistant_cmd = assistant_cmd
+        mod.god_only = god_only()
+        mod.only_groups = only_groups()
+        mod.only_pro = only_pro()
+        mod.pro_only = only_pro()
+        mod.only_group = only_group()
+        mod.is_bot_admin = is_bot_admin()
+        mod.is_admin = is_admin()
+        mod.peru_only = peru_only()
+        mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
-        sys.modules["userbot.plugins.assistant" + shortname] = mod
-        print("B-Lac Has imported " + shortname)
+        sys.modules[
+            "userbot.plugins.assistant" + "Initialising BLAC_USERBOT" + shortname
+        ] = mod
+        sedprint.info("BLAC_USERBOT Has imported " + shortname)
 
 
 def load_assistant(shortname):
@@ -663,8 +746,8 @@ def load_assistant(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        print("Initialising Lightning.")
-        print("B LAc - Imported " + shortname)
+        print("Initialising BLAC_USERBOT.")
+        print("BLAC_USERBOT - Imported " + shortname)
     else:
         import importlib
         import sys
@@ -677,4 +760,4 @@ def load_assistant(shortname):
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
         sys.modules["userbot.plugins.assistant." + shortname] = mod
-        print("B-Lac Has imported " + shortname)
+        print("BLAC_USERBOT Has imported " + shortname)
