@@ -83,8 +83,7 @@ def command(**args):
 
         return decorator
 
-
-def Blac_command(**args):
+def admin_command(**args):
     args["func"] = lambda e: e.via_bot_id is None
 
     stack = inspect.stack()
@@ -96,26 +95,30 @@ def Blac_command(**args):
     else:
         pattern = args.get("pattern", None)
         allow_sudo = args.get("allow_sudo", None)
-        allow_edited_updates = args.get("allow_edited_updates", False)
+        allow_edited_updates = args.get('allow_edited_updates', False)
         args["incoming"] = args.get("incoming", False)
         args["outgoing"] = True
         if bool(args["incoming"]):
             args["outgoing"] = False
 
         try:
-            if pattern is not None and not pattern.startswith("(?i)"):
-                args["pattern"] = "(?i)" + pattern
+            if pattern is not None and not pattern.startswith('(?i)'):
+                args['pattern'] = '(?i)' + pattern
         except BaseException:
             pass
 
-        reg = re.compile("(.*)")
+        reg = re.compile('(.*)')
         if pattern is not None:
             try:
                 cmd = re.search(reg, pattern)
                 try:
-                    cmd = (
-                        cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
-                    )
+                    cmd = cmd.group(1).replace(
+                        "$",
+                        "").replace(
+                        "\\",
+                        "").replace(
+                        "^",
+                        "")
                 except BaseException:
                     pass
 
@@ -137,7 +140,7 @@ def Blac_command(**args):
             pass
 
         if "allow_edited_updates" in args:
-            del args["allow_edited_updates"]
+            del args['allow_edited_updates']
 
         def decorator(func):
             if allow_edited_updates:
@@ -186,7 +189,7 @@ def load_module(shortname):
         mod.borg = bot
         mod.userbot = bot
         # auto-load
-        mod.Blac_cmd = admin_cmd
+        mod_cmd = admin_cmd
         mod.sudo_cmd = sudo_cmd
         mod.edit_or_reply = edit_or_reply
         mod.eor = eor
@@ -217,71 +220,6 @@ def remove_plugin(shortname):
                     del bot._event_builders[i]
     except:
         raise ValueError
-
-
-def Blac_cmd(pattern=None, command=None, **args):
-    args["func"] = lambda e: e.via_bot_id is None
-    stack = inspect.stack()
-    previous_stack_frame = stack[1]
-    file_test = Path(previous_stack_frame.filename)
-    file_test = file_test.stem.replace(".py", "")
-    allow_sudo = args.get("allow_sudo", False)
-    # get the pattern from the decorator
-    if pattern is not None:
-        if pattern.startswith(r"\#"):
-            # special fix for snip.py
-            args["pattern"] = re.compile(pattern)
-        elif pattern.startswith(r"^"):
-            args["pattern"] = re.compile(pattern)
-            cmd = pattern.replace("$", "").replace("^", "").replace("\\", "")
-            try:
-                CMD_LIST[file_test].append(cmd)
-            except BaseException:
-                CMD_LIST.update({file_test: [cmd]})
-        else:
-            if len(Config.CMD_HNDLR) == 2:
-                darkreg = "^" + Config.CMD_HNDLR
-                reg = Config.CMD_HNDLR[1]
-            elif len(Config.CMD_HNDLR) == 1:
-                darkreg = "^\\" + Config.CMD_HNDLR
-                reg = Config.CMD_HNDLR
-            args["pattern"] = re.compile(darkreg + pattern)
-            if command is not None:
-                cmd = reg + command
-            else:
-                cmd = (
-                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
-                )
-            try:
-                CMD_LIST[file_test].append(cmd)
-            except BaseException:
-                CMD_LIST.update({file_test: [cmd]})
-
-    args["outgoing"] = True
-    # should this command be available for other users?
-    if allow_sudo:
-        args["from_users"] = list(Config.SUDO_USERS)
-        # Mutually exclusive with outgoing (can only set one of either).
-        args["incoming"] = True
-        del args["allow_sudo"]
-
-    # error handling condition check
-    elif "incoming" in args and not args["incoming"]:
-        args["outgoing"] = True
-
-    # add blacklist chats, UB should not respond in these chats
-    args["blacklist_chats"] = True
-    black_list_chats = list(Config.UB_BLACK_LIST_CHAT)
-    if len(black_list_chats) > 0:
-        args["chats"] = black_list_chats
-
-    # add blacklist chats, UB should not respond in these chats
-    if "allow_edited_updates" in args and args["allow_edited_updates"]:
-        del args["allow_edited_updates"]
-
-    # check if the plugin should listen for outgoing 'messages'
-
-    return events.NewMessage(**args)
 
 
 def admin_cmd(pattern=None, command=None, **args):
@@ -348,6 +286,69 @@ def admin_cmd(pattern=None, command=None, **args):
 
     return events.NewMessage(**args)
 
+def admin_cmd(pattern=None, command=None, **args):
+    args["func"] = lambda e: e.via_bot_id is None
+    stack = inspect.stack()
+    previous_stack_frame = stack[1]
+    file_test = Path(previous_stack_frame.filename)
+    file_test = file_test.stem.replace(".py", "")
+    allow_sudo = args.get("allow_sudo", False)
+    # get the pattern from the decorator
+    if pattern is not None:
+        if pattern.startswith(r"\#"):
+            # special fix for snip.py
+            args["pattern"] = re.compile(pattern)
+        elif pattern.startswith(r"^"):
+            args["pattern"] = re.compile(pattern)
+            cmd = pattern.replace("$", "").replace("^", "").replace("\\", "")
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+        else:
+            if len(Config.CMD_HNDLR) == 2:
+                darkreg = "^" + Config.CMD_HNDLR
+                reg = Config.CMD_HNDLR[1]
+            elif len(Config.CMD_HNDLR) == 1:
+                darkreg = "^\\" + Config.CMD_HNDLR
+                reg = Config.CMD_HNDLR
+            args["pattern"] = re.compile(darkreg + pattern)
+            if command is not None:
+                cmd = reg + command
+            else:
+                cmd = (
+                    (reg + pattern).replace("$", "").replace("\\", "").replace("^", "")
+                )
+            try:
+                CMD_LIST[file_test].append(cmd)
+            except BaseException:
+                CMD_LIST.update({file_test: [cmd]})
+
+    args["outgoing"] = True
+    # should this command be available for other users?
+    if allow_sudo:
+        args["from_users"] = list(Config.SUDO_USERS)
+        # Mutually exclusive with outgoing (can only set one of either).
+        args["incoming"] = True
+        del args["allow_sudo"]
+
+    # error handling condition check
+    elif "incoming" in args and not args["incoming"]:
+        args["outgoing"] = True
+
+    # add blacklist chats, UB should not respond in these chats
+    args["blacklist_chats"] = True
+    black_list_chats = list(Config.UB_BLACK_LIST_CHAT)
+    if len(black_list_chats) > 0:
+        args["chats"] = black_list_chats
+
+    # add blacklist chats, UB should not respond in these chats
+    if "allow_edited_updates" in args and args["allow_edited_updates"]:
+        del args["allow_edited_updates"]
+
+    # check if the plugin should listen for outgoing 'messages'
+
+    return events.NewMessage(**args)
 
 """ Userbot module for managing events.
  One of the main components of the userbot. """
@@ -789,7 +790,9 @@ def start_assistant(shortname):
         mod.peru_only = peru_only()
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
-        sys.modules["userbot.plugins.assistant" + "Initialising Blac" + shortname] = mod
+        sys.modules[
+            "userbot.plugins.assistant" + "Initialising Blac" + shortname
+        ] = mod
         sedprint.info("Blac Has imported " + shortname)
 
 
