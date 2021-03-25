@@ -83,6 +83,7 @@ def command(**args):
 
         return decorator
 
+
 def Blac_command(**args):
     args["func"] = lambda e: e.via_bot_id is None
 
@@ -95,30 +96,26 @@ def Blac_command(**args):
     else:
         pattern = args.get("pattern", None)
         allow_sudo = args.get("allow_sudo", None)
-        allow_edited_updates = args.get('allow_edited_updates', False)
+        allow_edited_updates = args.get("allow_edited_updates", False)
         args["incoming"] = args.get("incoming", False)
         args["outgoing"] = True
         if bool(args["incoming"]):
             args["outgoing"] = False
 
         try:
-            if pattern is not None and not pattern.startswith('(?i)'):
-                args['pattern'] = '(?i)' + pattern
+            if pattern is not None and not pattern.startswith("(?i)"):
+                args["pattern"] = "(?i)" + pattern
         except BaseException:
             pass
 
-        reg = re.compile('(.*)')
+        reg = re.compile("(.*)")
         if pattern is not None:
             try:
                 cmd = re.search(reg, pattern)
                 try:
-                    cmd = cmd.group(1).replace(
-                        "$",
-                        "").replace(
-                        "\\",
-                        "").replace(
-                        "^",
-                        "")
+                    cmd = (
+                        cmd.group(1).replace("$", "").replace("\\", "").replace("^", "")
+                    )
                 except BaseException:
                     pass
 
@@ -140,7 +137,7 @@ def Blac_command(**args):
             pass
 
         if "allow_edited_updates" in args:
-            del args['allow_edited_updates']
+            del args["allow_edited_updates"]
 
         def decorator(func):
             if allow_edited_updates:
@@ -286,6 +283,7 @@ def Blac_cmd(pattern=None, command=None, **args):
 
     return events.NewMessage(**args)
 
+
 def admin_cmd(pattern=None, command=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
@@ -349,6 +347,7 @@ def admin_cmd(pattern=None, command=None, **args):
     # check if the plugin should listen for outgoing 'messages'
 
     return events.NewMessage(**args)
+
 
 """ Userbot module for managing events.
  One of the main components of the userbot. """
@@ -790,9 +789,7 @@ def start_assistant(shortname):
         mod.peru_only = peru_only()
         mod.only_pvt = only_pvt()
         spec.loader.exec_module(mod)
-        sys.modules[
-            "userbot.plugins.assistant" + "Initialising Blac" + shortname
-        ] = mod
+        sys.modules["userbot.plugins.assistant" + "Initialising Blac" + shortname] = mod
         sedprint.info("Blac Has imported " + shortname)
 
 
