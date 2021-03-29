@@ -46,9 +46,9 @@ pm_caption += "🛡️𝕋𝔼𝕃𝔼𝕋ℍ𝕆ℕ🛡️ : `1.19.0` \n"
 
 pm_caption += f"⚜️𝕊𝕌𝔻𝕆⚜️            : `{sudou}`\n"
 
-pm_caption += "⚠️ℂℍ𝔸ℕℕ𝔼𝕃⚠️   : [𝕁𝕆𝕀ℕ](https://t.me/BLAC_USERBOT)\n"
+pm_caption += "⚠️ℂℍ𝔸ℕℕ𝔼𝕃⚠️   : [𝕁𝕆𝕀ℕ](https://t.me/CRACKINGUNITED1)\n"
 
-pm_caption += "🔥ℂℝ𝔼𝔸𝕋𝕆ℝ🔥    : [ℕ𝕆𝕆𝔹 ℍ𝔼ℝ𝔼](https://t.me/ERROR_404_USER_NOT_FOUNDED)\n\n"
+pm_caption += "🔥𝕆𝕎ℕ𝔼ℝ🔥    : [𝕍𝔼ℕ𝕆𝕄](https://t.me/R2K_VENOM)\n\n"
 
 pm_caption += "🔥𝔹𝕃𝔸ℂ 𝔾𝔸ℕ𝔾 𝕆𝕎ℕ𝔼ℝ🔥    : [𝕁𝔸𝕊𝕊𝔸 𝕁𝔸𝕋𝕋](https://t.me/JATTGAMINGYT11)\n\n"
 
